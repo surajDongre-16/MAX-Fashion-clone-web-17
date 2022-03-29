@@ -6,21 +6,349 @@
     <meta name="viewport" content="width=h1, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #contianer{
+        #container{
             display:flex;
             font-size: 25px;
             color:white;
             background-color: black;
+            justify-content: space-between;
+        }
+        .top-content1{
+            width:30%;
+            height:50px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            font-size: 20px;
+            position: relative;
+            left:100px;
+        }
+        .top-content2{
+            width:30%;
+            height:50px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            font-size: 20px;
+            position: relative;
+            left:-100px;
+        }
+        #nav-bar{
+            display:flex;
+            flex-direction: column;
+            height:120px;
+            width:100%;
+        }
+        .nav-content{
+            display:flex;
+            justify-content: space-between;
+            background-color: #f7f8f7;
+
+        }
+        .nav-cato1{
+            height:60px;
+            width: 40%;
+            display: flex;
+            justify-content: space-around;
+            font-size: 20px;
+            font-weight: bolder;
+            align-items: center;
+            position: relative;
+            left:125px;
+
+        }
+        div > input{
+            font-size: 20px;
+        }
+        .nav-cato2{
+            width: 15%;
+            display: flex;
+            justify-content: space-between;
+            font-size: 20px;
+            position: relative;
+            right:200px;
+            font-weight: bolder;
+            align-items: center;
+        }
+        .nav-subcat{
+            height:100%;
+            width:65%;
+            display: flex;
+            justify-content: space-around;
+            font-size: 20px;
+            font-weight: bolder;
+            position: relative;
+            left:135px;
+            align-items: center;
+        }
+        .offer-div{
+            background-color:#303ab2;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height:50px;
+            font-size: 20px;
+        }
+        .moving-img{
+            height:600px;
+            width:90%;
+            margin:auto;
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .arrows{
+            width:2%;
+            height: 100%;
+        }
+        .fa-solid{
+            font-size: 40px;
+            margin-top: 250px;    
+        }
+        .img{
+            height:100%;
+            border: 1px solid red;
+            width:100%
+        }
+        .img2{
+            margin: auto;
+            width:85%;
+            height:630px;
+            margin-top:300px;
+            margin-bottom: 300px;
+            display: flex;
+            align-items: stretch;
+        }
+        .shopping-list{
+            margin:auto;
+            width:85%;
+            margin-bottom: 300px;
+        }
+        .shopping-list > p{
+            font-size:50px
+        }
+        .categories{
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            grid-template-rows: auto;
+            gap:20px;
+        }
+        
+        .categories > div > img{
+            height:250px;
+            width:250px;
+        }
+        .cat-p{
+            font-size:25px;
+            font-weight: bolder;
+            display: block;
+            margin-left: 50px;
+        }
+        .budget-zone{
+            width:85%;
+            margin: auto;
+            margin-bottom: 300px;
+        }
+        .budget-cards{
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: auto;
+        
+        }
+        .dress-img{
+            display: flex;
+            align-items: stretch;
+            height:630px;
+        }
+        .must-img{
+            display:flex;
+            align-items: stretch;
+            height:430px
+        }
+         #double-img {
+            display:grid;
+            height:430px;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: auto;
+            gap:20px;
+        } 
+        #double-img >div{
+            display: flex;
+        }
+        .gifting-zone > img{
+            width:100%;
         }
     </style>
 </head>
 <body>
-    <h1>Body of project</h1>
     <div id="container">
-        <div>home</div>
-        <div>help</div>
-        <div>about</div>
-        <div>FAQ</div>
+        <div class="top-content1">
+            <div>Free Shipping</div>
+            <div>Return to Store</div>
+            <div>Click & Collect</div>
+        </div>
+        <div class="top-content2">
+            <div>Download Our Apps</div>
+            <div>Store Locator</div>
+            <div>Help</div>
+        </div>
     </div>
+    <div id="nav-bar">
+        <div class="nav-content">
+            <div class="nav-cato1">
+                <div>MAX</div>
+                <div>Women</div>
+                <div>Men</div>
+                <div>Girls</div>
+                <div>Boys</div>
+                <input type="search" placeholder="what are you looking for?">
+            </div>
+            
+            <div class="nav-cato2">
+                <div>Sign Up-Sign In</div>
+                <div>Basket</div>
+            </div>
+        </div>
+        <div class="nav-subcat">
+            <div>Tops</div>
+            <div>Bottoms</div>
+            <div>Dresses & Jumpsuits</div>
+            <div>Sleepwear</div>
+            <div>Indian Wear</div>
+            <div>Sportswear</div>
+            <div>Lingerie</div>
+            <div>Accessories</div>
+            <div>Footwear</div>
+            <div>Winterwear</div>
+            <div>More</div>
+        </div>
+    </div>
+    <div class="offer-div">
+        <p>Buy 1 get 2nd at Rs199 + Free shipping on ALL orders</p>
+    </div>
+     
+    <div class="moving-img">
+        <div class="arrows"><i class="fa-solid fa-angle-left"></i></div>
+            <div class="img"><img src="" alt=""></div>
+        <div class="arrows"> <i class="fa-solid fa-angle-right"></i></div>          
+    </div>
+    <div class="img2">
+        <img src="https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/department-modularblock-oneBythree-C-Common-28Mar2022.jpg" alt="">   
+    </div>
+    <div class="shopping-list">
+        <p>Shop By Category</p>
+        <div class="categories">
+            <div>
+                <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-A-1-Desktop-Women-14Feb2022.jpg" alt="">
+                <p class="cat-p">Tops & Tees</p>
+            </div>
+            <div>
+                <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-A-2-Desktop-Women-14Feb2022.jpg" alt="">
+                <p class="cat-p">Dresses</p>
+            </div>
+            <div>
+                <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-A-3-Desktop-Womenn-14Feb20222.jpg" alt="">
+                <p class="cat-p">Winterwear</p>
+            </div>
+            <div>
+                <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-A-4-Desktop-Women-14Feb2022.jpg" alt="">
+                <p class="cat-p">Bottoms</p>
+            </div>
+            <div>
+                <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-A-5-Desktop-Women-14Feb2022.jpg" alt="">
+                <p class="cat-p">Kurtas</p>
+            </div>
+            <div>
+                <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-A-6-Desktop-Women-14Feb2022.jpg" alt="">
+                <p class="cat-p">Suits & Sets</p>
+            </div>
+            <div>
+                <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-A-7-Desktop-Women-14Feb2022.jpg" alt="">
+                <p class="cat-p">Fusion Dresses</p>
+            </div>
+            <div>
+                <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-A-8-Desktop-Women-14Feb2022.jpg" alt="">
+                <p class="cat-p">Ethnic Bottoms</p>
+            </div>
+            <div>
+                <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-A-9-Desktop-Women-14Feb2022.jpg" alt="">
+                <p class="cat-p">Sleepwear</p>
+            </div>
+            <div>
+                <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-A-10-Desktop-Women-14Feb2022.jpg" alt="">
+                <p class="cat-p">Activewear</p>
+            </div>
+            <div>
+                <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-A-11-Desktop-Women-14Feb2022.jpg" alt="">
+                <p class="cat-p">Lingerie</p>
+            </div>
+            <div>
+                <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-A-12-Desktop-Women-14Feb2022.jpg" alt="">
+                <p class="cat-p">Add Ons</p>
+            </div>
+        </div>
+    </div>
+    <div class="budget-zone shopping-list">
+        <p>Budget Zone</p>
+        <div class="budget-cards">
+            <div>
+                <img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-modularblock19One-Women-03Mar2022.jpg" alt="">
+            </div>
+            <div>
+                <img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-modularblock19Two-Women-03Mar2022.jpg" alt="">
+            </div>
+            <div>
+                <img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-modularblock19Three-Women-03Mar2022.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="dress-shop shopping-list">
+        <p>Dress Shop</p>
+        <div class="dress-img">
+            <img src="https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-modularblock13One-Women-10MARCH2022A.jpg" alt="">
+        </div>
+    </div>
+    <div class="Must-have shopping-list">
+        <p>Must Haves</p>
+        <div class="must-img">
+            <img src="https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-modularblock16One-Women-08MAR2022.jpg" alt="">
+        </div>
+    </div>
+    <div class="youth-store shopping-list">
+        <p>Youth Store</p>
+        <div class="must-img">
+            <img src="https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-department-5modularblock-oneBytwo1C-Women-08MARNEW20222.jpg" alt="">
+        </div>
+    </div>
+    <div class="popular shopping-list">
+        <p>Popular Now</p>
+        <div class="must-img">
+            <img src="https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-department-9modularblock-oneBythree-A-Women-08MAR122022.jpg" alt="">
+        </div>
+    </div>
+    <div class="you-like shopping-list">
+        <p>You May Also Like</p>
+        <div id="double-img">
+            <div>
+                <img src="https://lmsin.net/cdn-cgi/image/w=616,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-modularblock15One-Women-13Jan2022.jpg" alt="">
+            </div>
+            <div>
+                <img src="https://lmsin.net/cdn-cgi/image/w=616,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-modularblock15Two-Women-13Jan2022.jpg" alt="">
+            </div>
+        </div>     
+    </div>
+    <div class="gifting-zone shopping-list">
+        <p>Gifting Zone</p>
+        <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/desktop-modularblock14One-Women-26Oct2021.jpg" alt="">
+    </div>
+    <div class="connect shopping-list gifting-zone">
+        <p>Connect With Us</p>
+        <img src="https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-department-modularblock8-oneBythree-A-Women-21Oct2020.jpg" alt="">
+    </div>   
 </body>
 </html>
+<script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
