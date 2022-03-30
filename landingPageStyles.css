@@ -175,6 +175,10 @@ div > input{
 .must-img{
     width:99%;
     margin:auto;
+    display:flex;
+    align-items: stretch;
+    height:430px;
+
 }
 
 .must-img>img{
@@ -198,4 +202,10 @@ div > input{
 
 .gifting-zone > img{
     width:100%;
+}
+#age-cat{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap:10px;
 }
