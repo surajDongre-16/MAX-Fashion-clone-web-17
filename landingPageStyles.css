@@ -211,7 +211,13 @@ div > input{
 }
 #age-cat{
     display:grid;
+    width:98.5%;
+    margin:auto;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: auto;
-    gap:10px;
+    gap:16px;
+}
+
+#age-cat img{
+    width:100%;
 }
