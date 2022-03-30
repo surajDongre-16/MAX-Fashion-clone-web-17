@@ -1069,7 +1069,7 @@
 //           name  :"MAX Printed Round Neck T-shirt"
 //       },
 // ]
-
+var basket = JSON.parse(localStorage.getItem("toBasket")) || [];
 
 function displayData(Data){
 
@@ -1110,14 +1110,28 @@ function displayData(Data){
         name.style.fontSize="14px";
         name.style.marginTop="-10%";
         name.style.lineHeight="20px"
+
+        var basket = document.createElement("button");
+        basket.innerText = "Add to Basket";
+        basket.addEventListener("click", function(){
+            addToBasket(ele);
+        });
     
-        box.append(img,price_box,name);
+        box.append(img,price_box,name,basket);
     
         document.querySelector("#product_list").append(box);
     })
 
 
 };
+
+
+//Basket Function   
+function addToBasket(ele){
+    basket.push(ele);
+    localStorage.setItem("toBasket",JSON.stringify(basket));
+    console.log(basket);
+}
 
 
 

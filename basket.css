@@ -1,0 +1,17 @@
+#container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid red;
+}
+table{
+    border: 1px solid blue;
+}
+table>.item{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+}
+#checkout{
+    border: 1px solid green;
+}
