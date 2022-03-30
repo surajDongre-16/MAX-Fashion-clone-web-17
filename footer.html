@@ -14,15 +14,19 @@
 
     <style>
         .container {
-            display: flex;
-            justify-content: space-around;
-            margin-right: 130px;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            width:82%;
+            margin:auto;
+            margin-top: 50px;
+            justify-content: space-between;
         }
 
         .box {
             display: flex;
-            margin-left: 72px;
-            margin-top: 40px;
+            margin-left: 135px;
+            margin-bottom: 25px;
+            margin-top: 35px;
         }
 
         div>p {
@@ -33,7 +37,7 @@
         }
 
         #spc {
-            margin-left: 185px;
+            margin-left: 155px;
         }
 
         #line {
@@ -49,7 +53,7 @@
 
         .dan {
 
-            border: 1px solid black;
+            border: 1px solid rgb(185, 181, 181);
             height: 50px;
             width: 50px;
             text-align: center;
@@ -59,13 +63,14 @@
 
         #contact {
             display: flex;
-            justify-content: space-around;
+            width:63%;
+            margin-left:140px;
+            justify-content: space-between;
         }
 
         #size {
 
             font-size: 22px;
-
             margin-top: 15px;
 
         }
@@ -115,6 +120,7 @@
 
         #bottom {
             display: flex;
+            margin-left:88px;
         }
 
         #font>p {
@@ -136,8 +142,8 @@
         }
 
         #name {
-            width: 95%;
-            color: #c9c9c9
+            width: 82%;
+            opacity: 0.2;
         }
 
         #sub {
@@ -172,20 +178,21 @@
 
         #high {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
+            width:70%;
+            margin-left: 128px;
             margin-top: 30px;
-            margin-bottom: 40px;
+            margin-bottom: 50px;
         }
         #lowerimg
         {
             margin-left: 20px;
-         border-radius: 0%;
          height:55px;
          width:auto;
         }
         .lame
         {
-            margin-left: -26px;
+            margin-left: 0px;
         }
         #iimg
         {
@@ -202,10 +209,10 @@
 </head>
 
 <body>
-    <hr>
+    <hr style="opacity:0.2">
     <div id="high">
         <div class="upper lame">
-            <P style="font-size: 22px;font-weight: bolder;color:black">Subscribe to our awsome emails.</P>
+            <P style="font-size: 22px;font-weight: bolder;color:black">Subscribe to our awesome emails.</P>
             <p style="font-size:16px;color:#929391">Get our latest offers and news straight in your inbox</p>
             <div id="sub">
                 <input placeholder="Please enter an email adress" />
@@ -214,7 +221,7 @@
 
         </div>
         <div class="upper ">
-            <P style="font-size: 22px;font-weight: bolder;color:black">Download our apps.</P>
+            <P style="font-size: 22px;font-weight: bolder;color:black">Download our apps</P>
             <p style="font-size:16px;color:#929391">Shop our products and offers -on-the-go</p>
             <div id="iimg">
                 <img id="upperimg"
@@ -298,10 +305,8 @@
             <p>Help Center</p>
         </div>
 
-
-
-
     </div>
+
     <hr id="name">
 
     <div id="contact">
@@ -315,7 +320,7 @@
             </div>
         </div>
         <div class="two">
-            <div class="dan"><i class="fa-regular fa-envelope" id="size"></i>
+            <div class="dan"><i class="fa-solid fa-messages-question"></i>
 
             </div>
             <div class="inner">
@@ -324,7 +329,7 @@
             </div>
         </div>
         <div class="two">
-            <div class="dan">
+            <div class="dan"><i class="fa-regular fa-envelope" id="size"></i>
 
             </div>
             <div class="inner">
