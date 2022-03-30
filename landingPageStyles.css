@@ -108,10 +108,16 @@ div > input{
 }
 .img2{
     margin:auto;
-    width:85%;
+    width:82%;
     margin-top:300px;
-    margin-bottom: 300px;
+    margin-bottom: 120px;
 }
+
+.img2 img{
+    width:100%;
+}
+
+
 .shopping-list{
     margin:auto;
     width:83%;
@@ -175,10 +181,6 @@ div > input{
 .must-img{
     width:99%;
     margin:auto;
-    display:flex;
-    align-items: stretch;
-    height:430px;
-
 }
 
 .must-img>img{
