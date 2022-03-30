@@ -1,3 +1,6 @@
+
+
+
 #container{
     display:flex;
     font-size: 25px;
@@ -104,43 +107,47 @@ div > input{
     width:100%
 }
 .img2{
-    margin: auto;
+    margin:auto;
     width:85%;
-    height:630px;
     margin-top:300px;
     margin-bottom: 300px;
-    display: flex;
-    align-items: stretch;
 }
 .shopping-list{
     margin:auto;
-    width:85%;
-    margin-bottom: 300px;
+    width:83%;
+    margin-bottom: 119px;
 }
 .shopping-list > p{
-    font-size:50px
+    font-size:36px;
+    line-height: 51px;
+    font-weight: 400;
+    margin:15px 0px;
 }
 .categories{
     display: grid;
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: auto;
-    gap:20px;
 }
 
 .categories > div > img{
-    height:250px;
-    width:250px;
+    width:100%;
+}
+
+.categories>div{
+    margin:0px 8px;
 }
 .cat-p{
-    font-size:25px;
-    font-weight: bolder;
+    font-size:18px;
+    line-height: 22px;
+    margin:11px 0px;
+    font-weight: 400;
     display: block;
-    margin-left: 50px;
+    text-align: center;
 }
 .budget-zone{
-    width:85%;
+    width:83.5%;
     margin: auto;
-    margin-bottom: 300px;
+    margin-bottom: 120px;
 }
 .budget-cards{
     display:grid;
@@ -148,26 +155,51 @@ div > input{
     grid-template-rows: auto;
 
 }
+
+.budget-cards>div{
+    margin:0px 8px
+}
+
+.budget-cards img{
+    width:100%;
+}
+
 .dress-img{
-    display: flex;
-    align-items: stretch;
-    height:630px;
+    width:99%;
+    margin:auto;
+}
+
+.dress-img>img{
+    width:100%;
 }
 .must-img{
+    width:99%;
+    margin:auto;
     display:flex;
     align-items: stretch;
     height:430px;
+
 }
+
+.must-img>img{
+    width:100%;
+}
+
+
  #double-img {
     display:grid;
-    height:430px;
+    width:99%;
+    margin:auto;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: auto;
-    gap:20px;
+    gap:16px;
 } 
-#double-img >div{
-    display: flex;
+
+#double-img img{
+    width:100%;
 }
+
+
 .gifting-zone > img{
     width:100%;
 }
