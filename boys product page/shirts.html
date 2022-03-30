@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shirts</title>
+
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="product_list.css">
+    
+
+</head>
+
+<body>
+    
+    <div id="product_list"></div>
+
+</body>
+
+</html>
+
+
+<script>
+boys_shirts=[
+			{
+				img_url1:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010689016-Multicolour-M-1000010689016-8122021_01-2100.jpg",
+				img_url2:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010689016-Multicolour-M-1000010689016-8122021_02-2100.jpg",
+				img_url3:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010689016-Multicolour-M-1000010689016-8122021_03-2100.jpg",
+				img_url4:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010689016-Multicolour-M-1000010689016-8122021_04-2100.jpg",
+				price:599,
+				name:"MAX Colourblocked Regular Fit Casual Shirt",
+			},
+
+			{
+				img_url1:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010693925-Multicolour-M-1000010693925-12012022_01-2100.jpg",
+				img_url2:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010693925-Multicolour-M-1000010693925-12012022_02-2100.jpg",
+				img_url3:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010693925-Multicolour-M-1000010693925-12012022_03-2100.jpg",
+				img_url4:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010693925-Multicolour-M-1000010693925-12012022_04-2100.jpg",
+				price:549,
+				name:"MAX Checked Full Sleeves Casual Shirt",
+			},
+
+			{
+				img_url1:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010693871-Multicolour-M-1000010693871-29122021_01-2100.jpg",
+				img_url2:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010693871-Multicolour-M-1000010693871-29122021_02-2100.jpg",
+				img_url3:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010693871-Multicolour-M-1000010693871-29122021_03-2100.jpg",
+				img_url4:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010693871-Multicolour-M-1000010693871-29122021_04-2100.jpg",
+				price:549,
+				name:"MAX Checked Shirt",
+			},
+
+			{
+				img_url1:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010234274-White-White-1000010234274-8052021_01-2100.jpg",
+				img_url2:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010234274-White-White-1000010234274-8052021_02-2100.jpg",
+				img_url3:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010234274-White-White-1000010234274-8052021_03-2100.jpg",
+				img_url4:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010234274-White-White-1000010234274-8052021_04-2100.jpg",
+				price:449,
+				name:"MAX Striped Regular Fit Casual Shirt",
+			},
+
+			{
+				img_url1:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010689016-Multicolour-M-1000010689016-8122021_01-2100.jpg",
+				img_url2:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010689016-Multicolour-M-1000010689016-8122021_02-2100.jpg",
+				img_url3:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010689016-Multicolour-M-1000010689016-8122021_03-2100.jpg",
+				img_url4:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010689016-Multicolour-M-1000010689016-8122021_04-2100.jpg",
+				price:599,
+				name:"MAX Colourblocked Regular Fit Casual Shirt",
+			},
+
+			{
+				img_url1:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010693925-Multicolour-M-1000010693925-12012022_01-2100.jpg",
+				img_url2:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010693925-Multicolour-M-1000010693925-12012022_02-2100.jpg",
+				img_url3:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010693925-Multicolour-M-1000010693925-12012022_03-2100.jpg",
+				img_url4:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010693925-Multicolour-M-1000010693925-12012022_04-2100.jpg",
+				price:549,
+				name:"MAX Checked Full Sleeves Casual Shirt",
+			},
+
+			{
+				img_url1:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010693871-Multicolour-M-1000010693871-29122021_01-2100.jpg",
+				img_url2:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010693871-Multicolour-M-1000010693871-29122021_02-2100.jpg",
+				img_url3:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010693871-Multicolour-M-1000010693871-29122021_03-2100.jpg",
+				img_url4:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010693871-Multicolour-M-1000010693871-29122021_04-2100.jpg",
+				price:549,
+				name:"MAX Checked Shirt",
+			},
+
+			{
+				img_url1:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010234274-White-White-1000010234274-8052021_01-2100.jpg",
+				img_url2:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010234274-White-White-1000010234274-8052021_02-2100.jpg",
+				img_url3:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010234274-White-White-1000010234274-8052021_03-2100.jpg",
+				img_url4:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010234274-White-White-1000010234274-8052021_04-2100.jpg",
+				price:449,
+				name:"MAX Striped Regular Fit Casual Shirt",
+			},
+
+			
+
+
+]
+
+    boys_shirts.map(function(ele){
+        var box=document.createElement("div");
+        box.style.margin="16px 0px"
+
+        var img=document.createElement("img");
+        img.src=ele.img_url1;
+        img.style.width="100%";
+        img.style.aspectRatio="1/1.2"
+
+        var price_box=document.createElement("div");
+        price_box.setAttribute("class","price_box");
+
+        var price=document.createElement("h3");
+        var rupee_sign=document.createElement("span");
+        rupee_sign.innerHTML=`<i class='fa-solid fa-indian-rupee-sign'></i> `;
+        rupee_sign.style.fontSize="12px"
+        price.append(rupee_sign,ele.price);
+        price.style.margin="8px 0px";
+        price.style.fontWeight="bolder";
+        price.style.fontSize="25px"
+
+
+        var like=document.createElement("div");
+        like.setAttribute("class","like");
+        
+        var like_img=document.createElement("img");
+        like_img.src="https://cdn-icons.flaticon.com/png/128/2901/premium/2901197.png?token=exp=1648635778~hmac=06c456c3dc80772809d7c530a0e931d2";
+        
+        like.append(like_img);
+
+
+        price_box.append(price,like);
+
+
+        var name=document.createElement("p");
+        name.innerText=ele.name;
+        name.style.fontSize="18px";
+        name.style.marginTop="-10px";
+
+        box.append(img,price_box,name);
+
+        document.querySelector("#product_list").append(box);
+    })
+
+</script>
