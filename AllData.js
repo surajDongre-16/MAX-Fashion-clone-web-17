@@ -1433,7 +1433,7 @@ boys_bottoms=[
 
 ]
 
-girs_tees=[
+girls_tees=[
     {
         img_1:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010982139-Blue-AQUA-1000010982139-10032022_01-2100.jpg",
         img_2:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010982139-Blue-AQUA-1000010982139-10032022_02-2100.jpg",
@@ -1500,7 +1500,7 @@ girs_tees=[
 
 ]
 
-girs_jeans=[
+girls_jeans=[
     {
         img_1:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010960550-Orange-RUSTCORAL-1000010960550-16022022_01-2100.jpg",
         img_2:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010960550-Orange-RUSTCORAL-1000010960550-16022022_03-2100.jpg" ,
@@ -1747,6 +1747,38 @@ girls_indian=[
         name:"MAX Printed Straight Kurta"
     },
 
+    {
+        img_1:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010876836-Yellow-YELLOW-1000010876836-5012022_01-2100.jpg",
+        img_2:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010876836-Yellow-YELLOW-1000010876836-5012022_02-2100.jpg",
+        img_3:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010876836-Yellow-YELLOW-1000010876836-5012022_03-2100.jpg",
+        price: 499,
+        name:"MAX Printed Straight Kurta"
+    },
+
+    {
+        img_1:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010619054-Multicolour-M-1000010619054-8272021_01-2100.jpg",
+        img_2:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010619054-Multicolour-M-1000010619054-8272021_02-2100.jpg",
+        img_3:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010619054-Multicolour-M-1000010619054-8272021_08-2100.jpg",
+        price:899,
+        name:"MAX Printed Round Neck Kurta with Pyjama and Dupatta"
+    },
+
+    {
+        img_1:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010707812-Orange-RUST-1000010707812-15122021_01-2100.jpg",
+        img_2:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010707812-Orange-RUST-1000010707812-15122021_03-2100.jpg",
+        img_3:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010707812-Orange-RUST-1000010707812-15122021_02-2100.jpg",
+        price: 999,
+        name:"MAX Embroidered A-Line Ethnic Dress"
+    },
+
+    {
+        img_1:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010480663-Pink-Rosepink-1000010480663-8182021_01-2100.jpg",
+        img_2:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010480663-Pink-Rosepink-1000010480663-8182021_06-2100.jpg",
+        img_3:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010480663-Pink-Rosepink-1000010480663-8182021_04-2100.jpg",
+        price: 1399,
+        name:"MAX Embellished Blouse with Lehenga and Dupatta",
+    },
+
 ]
 
 girls_addon=[
@@ -1780,6 +1812,38 @@ girls_addon=[
         img_3:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000009989224-1000009989223-3262021_04-2100.jpg",
         price:599,
         name:"MAX Minnie Mouse Printed Backpack"
+    },
+
+    {
+        img_1:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000009989224-1000009989223-3262021_01-2100.jpg",
+        img_2:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000009989224-1000009989223-3262021_02-2100.jpg",
+        img_3:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000009989224-1000009989223-3262021_04-2100.jpg",
+        price:599,
+        name:"MAX Minnie Mouse Printed Backpack"
+    },
+
+    {
+        img_1:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010252304-Multicolour-M-1000010252304-7292021_01-2100.jpg",
+        img_2:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010252304-Multicolour-M-1000010252304-7292021_02-2100.jpg",
+        img_3:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010252304-Multicolour-M-1000010252304-7292021_04-2100.jpg",
+        price:999,
+        name:"MAX Sequinned Zip-Closure Backpack"
+    },
+
+    {
+        img_1:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010316643-Multicolour-M-1000010316643-8242021_01-2100.jpg",
+        img_2:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010316643-Multicolour-M-1000010316643-8242021_04-2100.jpg",
+        img_3:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010316643-Multicolour-M-1000010316643-8242021_03-2100.jpg",
+        price:699,
+        name:"MAX Printed Doll Soft Toy"
+    },
+
+    {
+        img_1:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010912039-Blue-NAVY-1000010912039-12012022_01-2100.jpg",
+        img_2:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010912039-Blue-NAVY-1000010912039-12012022_02-2100.jpg",
+        img_3:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010912039-Blue-NAVY-1000010912039-12012022_06-2100.jpg",
+        price:199,
+        name:"MAX Printed Sling Back Flip Flops"
     },
 
 ]
