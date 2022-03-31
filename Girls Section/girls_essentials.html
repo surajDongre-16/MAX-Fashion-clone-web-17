@@ -19,7 +19,21 @@
 </head>
 
 <body>
+  <div class="sort">
+    <div>
+      <p class="total-product"></p>
+    </div>
+    <div>
+      <span>Sort by</span>
+      <select id="sortNames" onchange="NameSort()">
+      <option value="rele">Relevence</option>
+      <option value="ascending">Alphabetical</option>
+      <option value="htl">High to Low</option>
+      <option value="lth">Low to High</option>
+      </select>
+    </div>
     
+  </div>  
     <div id="product_list"></div>
 
     <div id="Footer"></div>
@@ -37,6 +51,39 @@
 <script>
 
 displayData(girls_essentials);
+function NameSort() {
+      //console.log('inside name sort')
+      var selected = document.querySelector("#sortNames").value;
+      console.log(selected);
+
+      if (selected == "ascending") {
+        girls_essentials.sort(function (a, b) {
+          if (a.name > b.name) return 1;
+          if (a.name < b.name) return -1;
+          return 0;
+        });
+        displayData(girls_essentials);
+      }
+
+      if (selected == "htl") {
+        girls_essentials.sort(function (a, b) {
+          return b.price - a.price;
+        });
+        displayData(girls_essentials);
+      }
+
+      if (selected == "lth") {
+        girls_essentials.sort(function (a, b) {
+          return a.price - b.price;
+        });
+        displayData(girls_essentials);
+      }
+
+      if(selected == "rele"){
+        displayData(girls_essentials)
+      }
+  }
+
 
 </script>
 
