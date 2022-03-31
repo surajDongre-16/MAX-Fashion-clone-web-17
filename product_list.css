@@ -3,10 +3,32 @@
     font-style: normal;
 }
 
+.sort{
+    width:90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.total-product{
+    font-weight: bolder;
+    opacity: 0.5;
+}
+select{
+    padding:20px 70px;
+    font-size: 14px;
+    border:1px solid rgb(200, 200, 200)
+}
+span{
+    margin:25px;
+    font-weight: bolder;
+    opacity: 0.5;
+}
+
 #product_list{
-    width:81%;
+    width:90%;
     margin:auto;
-    margin-bottom: 60px;
     display:grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: auto;
