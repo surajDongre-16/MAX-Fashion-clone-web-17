@@ -221,10 +221,15 @@ div > input{
     width:100%;
 }
 
+<<<<<<< HEAD
 .line{
     height:1px;
     width: 100%;
     background-color: black;
     opacity: 0.1;
     margin-top: 80px;
+=======
+.connect{
+    margin-bottom: 60px;
+>>>>>>> f9344e62e083620762a73671e2bd143c143997f8
 }

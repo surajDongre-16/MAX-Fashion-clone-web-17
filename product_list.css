@@ -6,6 +6,7 @@
 #product_list{
     width:81%;
     margin:auto;
+    margin-bottom: 60px;
     display:grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: auto;
