@@ -112,7 +112,7 @@ div > input{
 .img2{
     margin:auto;
     width:82%;
-    margin-top:300px;
+    margin-top:120px;
     margin-bottom: 120px;
 }
 
@@ -149,7 +149,7 @@ div > input{
     font-size:18px;
     line-height: 22px;
     margin:11px 0px;
-    font-weight: 400;
+    font-weight: 500;
     display: block;
     text-align: center;
 }

@@ -7,13 +7,20 @@
     <link rel="stylesheet" href="basket.css">
 </head>
 <body>
-    <h1></h1>
-    <div></div>
+    <div id="itemsInCart"></div>
+    <div id="offer">
+        <p>Get the offer</p>
+        <ul>
+            <li> Flat 200 Off on shopping worth 1999 & above, code- MAX200
+            </li>
+            <li> Flat 100 Off on 999 & above orders, code- NEW100 (First purchase only)</li>
+        </ul>
+    </div>
     <div id="container">
-        <table>
+       <main> <table>
             <thead>
                 <tr>
-                    <th>Item</th>
+                   <pre> <th>Item</th></pre>
                     <th>Description</th>
                     <th>Price</th>
                     <th>Quantity</th>
@@ -21,11 +28,28 @@
                 </tr>
             </thead>
             <tbody>
+                <tr>
+                    <td><img src="https://i1.lmsin.net/website_images/in/logos/logo-max.svg" alt="max"></td>
+                </tr>
             </tbody>
-        </table>
+        </table></main>
         <div id="checkout">
             <div><p>Subtotal : </p><p2></p2></div>
-            <div><p>Standard Ground Shipping</p></div>
+            <div><p>Standard Ground Shipping : </p>  <p3>FREE</p3></div>
+            <div><p>TOTAL :</p><p4></p4></div>
+            <div id="button">Proceed To Checkout</div>
+        </div>
+    </div>
+    <div id="paymentWays">
+        <p>Ways to pay</p>
+        <div>
+            <img src="https://i1.lmsin.net/website_images/ae/checkout/logo-visa.png" alt="">
+            <img src="https://i1.lmsin.net/website_images/ae/checkout/logo-mc.png" alt="">
+            <img src="https://i1.lmsin.net/website_images/in/checkout/logo-rupay.svg" alt="">
+            <img src="https://i1.lmsin.net/website_images/ae/checkout/logo-cash.png" alt="">
+            <img src="https://i1.lmsin.net/website_images/in/checkout/logo-netbanking.svg" alt="">
+            <img src="https://i1.lmsin.net/website_images/in/checkout/logo-wallet.svg" alt="">
+            <img src="https://i1.lmsin.net/website_images/in/checkout/logo-rewards.svg" alt="">
         </div>
     </div>
 </body>
