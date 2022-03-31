@@ -1,0 +1,228 @@
+@import url('https://fonts.adobe.com/fonts/proxima-nova');
+*{
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+
+  #navbar{
+      display: flex;
+      flex-direction: column;
+  }
+
+  #top_nav{
+      position: fixed;
+      border: 1px solid black;
+      height: 42px;
+      width: 100%;
+      top: 0;
+      left: 0%;
+      display: flex;
+      justify-content: space-evenly;
+      color: white;
+      background-color: black;
+      margin-bottom: 0%;
+      
+      
+      
+  }
+  #topleftnav{
+      /* border: 1px solid red; */
+      height: 100%;
+      width: 50%;
+      display: flex;
+      color: white;
+      text-decoration: none;
+
+  }
+  #topleftnav .topleftcontent{
+      color: white;
+      text-decoration: none;
+      
+  }
+  .navbutton{
+      border: none;
+  }
+  .topleftcontent{
+      padding: 5px;
+      justify-content: center;
+      align-items: center;
+      padding: 11px;
+  }
+  #toprightnav{
+    /* border: 1px solid red; */
+    width: 400px;
+    color: white;
+    display: flex;
+    text-align: center;
+
+}
+.toprightcontent{
+    padding: 8px;
+    padding-top: 11px;
+    font-size: 13px;
+}
+.vl{
+    height: 20px;
+    margin-top: 9px;
+    width: 1px;
+    border-left: 1px solid white;
+}
+#bottom_nav{
+    margin-top: 42px;
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    background-color: #f7f8f7;
+    
+}
+#bottomleftnav{
+    display: flex;
+    box-sizing: border-box;
+}
+#bottomleftnav .category{
+    padding: 15px;
+}
+#bottom_nav .searchbox{
+padding: 15px;
+
+}
+#bottom_nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 13px;
+}
+#bottom_nav a:hover{
+    color: #303ab2;
+}
+#bottom_nav i{
+    
+    
+    
+    
+    background-color: #ecedeb;
+    
+}
+#searchbar{
+    background-color: #ecedeb;
+    outline: none;
+    border: none;
+    height: 30px;
+    width: 300px;
+}
+.category{
+    line-height: 25px;
+    text-align: center;
+}
+.category:hover{
+    background-color: white;
+}
+.modalwrapper{
+    position: fixed;
+    left:0;
+    top:0;
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .3s ease-in-out;
+    padding-top: 300px;
+}
+
+.modalform{
+    background: #fff;
+    width: 660px;
+    max-width: 90%;
+    padding: 20px;
+    border-radius: 4px;
+    position: relative;
+    transform: translateY(-100%);
+    transition: all .3s ease-in-out;
+    /* padding-left: 40px;
+    /* padding-right: 40px; */ 
+    align-items: center;
+    justify-content: center;
+
+    
+}
+.modalform a{
+    text-decoration: none;
+}
+#modal-close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 32px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    /* box-sizing: border-box; */
+}
+.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+.signup_button{
+    display: flex;
+    border: 1px solid red;
+    
+    width: 80%;
+}
+.signup_button>button{
+    height: 60px;
+    width: 130px;
+    border: none;
+    background-color: #303ab2;
+    color: white;
+    left: 20px;
+    
+}
+.greypara{
+    color: grey;
+    font-size: 13px;
+}
+.navbutton{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.navbutton button{
+    background-color: hsl(120, 7%, 97%);
+}
+.navbutton .vl{
+    background-color: black;
+    line-height: normal;
+}
+.category_items{
+    display: flex;
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+}
+.category_items a{
+    text-decoration: none;
+    padding: 10px;
+    
+
+}
+
+.category_items a{
+    text-decoration: none;
+    background-color: red;
+}
+#cat{
+    width: 100%;
+    border: 1px solid black;
+    margin-top: 0px;
+    height: 50px;
+    
+}
