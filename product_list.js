@@ -1,8 +1,8 @@
 var basket = JSON.parse(localStorage.getItem("toBasket")) || [];
 
 function displayData(Data){
-
-    Data.map(function(ele){
+    document.querySelector("#product_list").innerHTML = ""
+    Data.map(function(ele, ind,arr){
         var box=document.createElement("div");
         box.style.margin="16px 0px"
     
@@ -45,13 +45,13 @@ function displayData(Data){
         basket.addEventListener("click", function(){
             addToBasket(ele);
         });
-    
+
         box.append(img,price_box,name,basket);
     
         document.querySelector("#product_list").append(box);
+        countFn(arr.length)
     })
-
-
+    
 };
 
 
@@ -62,5 +62,8 @@ function addToBasket(ele){
     console.log(basket);
 }
 
-
+// total products count
+function countFn(count){
+    document.querySelector(".total-product").innerText=`${count} Products`
+}
 
