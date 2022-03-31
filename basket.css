@@ -1,17 +1,76 @@
-#container{
+body{
     width: 80%;
     margin: auto;
+}
+#itemsInCart{
+    padding: 60px 0px 40px 0px;
+    font-size: 28px;
+}
+#offer{
+    border: 1px solid #ffedde;
+    padding: 5px;
+}
+#offer > p{
+    color: red;
+
+}
+#container{
+    
     display: flex;
     justify-content: space-around;
-    border: 1px solid red;
+    
 }
-table{
-    border: 1px solid blue;
+
+table tr{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 10px;
+    padding-right: 60px;
+
+    
+    
 }
-table>.item{
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    border-radius: 5px;
+td>img[alt = "max"]{
+    width: 50px;
+    height: 20px;
+}
+td>img{
+    width: 150px;
+    height: 150px;
 }
 #checkout{
-    border: 1px solid green;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding-top: 40px;
+    padding: 20px;
+    
+}
+
+#checkout > div{
+    display: flex;
+    justify-content: space-between;
+}
+p3{
+    color: green;
+}
+p2,p3,p4{
+    padding: 18px;
+}
+#checkout>div:nth-child(2){
+    border-bottom: 1px solid grey;
+}
+#button{
+    background-color: #303ab2;
+    color: white;
+    margin-top: 20px;
+    padding: 15px 0px 15px 10px;
+    font-size: 22px;
+    
+}
+#paymentWays > div{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: auto;
+}
+#paymentWays img{
+    width: 100px;
+    height: 40px;
 }
