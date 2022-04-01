@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="../product_list.css">
+    <link rel="stylesheet" href="../footer.css">
+    
+
+</head>
+
+<body>
+  <div class="sort">
+    <div>
+      <p class="total-product"></p>
+    </div>
+    <div>
+      <span>Sort by</span>
+      <select id="sortNames" onchange="NameSort()">
+      <option value="rele">Relevence</option>
+      <option value="ascending">Alphabetical</option>
+      <option value="htl">High to Low</option>
+      <option value="lth">Low to High</option>
+      </select>
+    </div>
+    
+  </div>  
+    <div id="product_list"></div>
+
+    <div id="Footer"></div>
+
+</body>
+
+</html>
+
+
+<script src="../product_list.js"></script>
+
+<script src="../AllData.js"></script>
+
+<script>
+
+displayData(womens_lingeria);
+function NameSort() {
+      //console.log('inside name sort')
+      var selected = document.querySelector("#sortNames").value;
+      console.log(selected);
+
+      if (selected == "ascending") {
+        womens_lingeria.sort(function (a, b) {
+          if (a.name > b.name) return 1;
+          if (a.name < b.name) return -1;
+          return 0;
+        });
+        displayData(womens_lingeria);
+      }
+
+      if (selected == "htl") {
+        womens_lingeria.sort(function (a, b) {
+          return b.price - a.price;
+        });
+        displayData(womens_lingeria);
+      }
+
+      if (selected == "lth") {
+        womens_lingeria.sort(function (a, b) {
+          return a.price - b.price;
+        });
+        displayData(womens_lingeria);
+      }
+
+      if(selected == "rele"){
+        displayData(womens_lingeria)
+      }
+  }
+
+
+</script>
+
+<script src="../footer.js"></script>
