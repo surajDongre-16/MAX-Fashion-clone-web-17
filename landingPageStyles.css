@@ -4,9 +4,7 @@
     font-weight: 400;
     
 }
-p{
-    font-size: 50px;
-}
+
 #container{
     display:flex;
     font-size: 25px;
@@ -114,9 +112,14 @@ div > input{
 }
 .img2{
     margin:auto;
-    width:82%;
-    margin-top:120px;
-    margin-bottom: 120px;
+    width:81.5%;
+    font-size: 36px;
+    margin-top:60px;
+    margin-bottom: 60px;
+}
+
+.img2 p{
+    margin:16px 0px;
 }
 
 .img2 img{
@@ -130,8 +133,8 @@ div > input{
     margin-bottom: 60px;
 }
 .shopping-list > p{
-    /* font-size:36px; */
-    line-height: 51px;
+    font-size:36px;
+    /* line-height: 51px; */
     font-weight: 400;
     margin:15px 0px;
 }
@@ -143,11 +146,12 @@ div > input{
 
 .categories > div > img{
     width:100%;
+    align-self: auto;
 }
 
 .categories>div{
     margin:0px 8px;
-    cursor:pointer
+    cursor:pointer;
 }
 .cat-p{
     font-size:18px;
