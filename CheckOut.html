@@ -8,6 +8,7 @@
         body{
             width: 70%;
             margin: auto;
+            display: flex;
         }
         #shipping>div{
             display: flex;
@@ -17,6 +18,65 @@
             margin-right: 20px;
             padding-left: 20px;
             padding-right: 100px;
+        }
+        .card{
+            display: flex;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+            padding: 10px;
+        }
+        .card>div>img{
+            width: 40px;
+            height: 40px;
+        }
+        p1{
+            font-weight: bolder;
+        }
+        .card>div>p,p1{
+            padding-left: 20px;
+            display: inline-block;
+        }
+        input,label{
+            margin-bottom: 40px;
+        }
+        input{
+            padding-right: 60px;
+        }
+        #button{
+            background-color: #303ab2;
+            color: white;
+            margin-top: 20px;
+            padding: 15px 40px 15px 50px;
+            font-size: 22px;
+            margin-top: -10px;
+        }
+        #pay{
+            display: flex;
+            padding: 40px;
+            justify-content: space-between;
+
+        }
+        #pay>p{
+            font-size: 12px;
+    
+        }
+/* Order Summary */
+        #itemDetails>div{
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+            padding: 10px;
+        }
+        #itemDetails>div>img{
+            width: 70px;
+            width: 70px;
+        }
+        #checkout > div{
+            display: flex;
+            justify-content: space-between;
+        }
+        p3{
+            color: green;
+        }
+        p2,p3,p4{
+            padding: 18px;
         }
     </style>
 </head>
@@ -32,10 +92,119 @@
             </div>
         </div>
         <div>
+            <h3>Add your shipping address</h3>
+            <form action="">
+                <label for="fullName">Full Name</label><br>
+                <input type="text" name="" id="fullName"><br>
+                <label for="mobile">Mobile Number</label><br>
+                <input type="text" id="mobile"><br>
+                <label for="">Pincode</label><br>
+                <input type="text" id="pincode"><br>
+                <label for="">City</label><br>
+                <input type="text" name="" id="city"><br>
+                <label for="">State</label><br>
+                <input type="text" name="" id="state"><br>
+                <label for="">Building Name or Number</label><br>
+                <input type="text" name="" id="buildingName"><br>
+                <label for="">Street Name or Number</label><br>
+                <input type="text" id="streetName"><br>
+                <label for="">Landmark(optional)</label><br>
+                <input type="text" id="landmark"><br>
+                <label for="">Address Type</label><br>
+                <input type="radio" name="" id=""><label for="Home">Home</label><input type="radio" name="" id=""><label for="office">Office</label>
+            </form>
+            
+        </div>
+        <div>
+            <h2>Select a payment Method</h2>
             <form action="">
                 
+                <div class ="card">
+                    <input type="radio" name="" id="">
+                     <div><img src="https://cdn-icons-png.flaticon.com/512/60/60378.png" alt=""></div>
+                    <div><p1>Credit/Debit Card</p1><br>
+                    <p>Use your debit or credit card</p></div>
+                </div>
+                <input type="radio"><label for="creditCard">Credit Card</label>
+                <input type="radio" name="" id=""><label for="debitCard">Debit Card</label><br>
+                <label for="cardNumber">Card Number</label><br>
+                <input type="number" name="" id="cardNumber"><br>
+                <label for="name">Name on Card</label><br>
+                <input type="text" name="" id="name"><br>
+                <label for="date">Expiry Date</label>
+                <input type="month" id="date">
+                <label for="cvv">CVV</label>
+                <input type="number" id="cvv"><br>
+                <input type="checkbox" name="" id="saveCard">
+                <label for="saveCard">Save this card for a faster checkout experience</label><br>
+                <input type="checkbox" name="" id="billShipSame">
+                <label for="billShipSame">Is billing address the same as shipping address ?</label>
             </form>
         </div>
+        <div>
+            <div class ="card">
+                <input type="radio" name="" id="">
+                 <div><img src="https://cdn.icon-icons.com/icons2/2768/PNG/512/calendar_icon_176644.png" alt=""></div>
+                <div><p1>EMI</p1><br>
+                <p>Available on orders above Rs 3000</p></div>
+            </div>
+            <div class ="card">
+                <input type="radio" name="" id="">
+                 <div><img src="https://pixlok.com/wp-content/uploads/2021/05/Paypal-Icon-PNG.jpg" alt=""></div>
+                <div><p1>PayPal</p1><br>
+                <p>Pay now with your PayPal account</p></div>
+            </div>
+            <div class ="card">
+                <input type="radio" name="" id="">
+                 <div><img src="https://cpng.pikpng.com/pngl/s/560-5609413_banknotes-svg-png-icon-free-download-banknotes-icon.png" alt=""></div>
+                <div><p1>Cash on Delivery</p1><br>
+                <p>+ Rs 49</p></div>
+            </div>
+            <div class ="card">
+                <input type="radio" name="" id="">
+                 <div><img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/internet-banking-1534545-1300611.png" alt=""></div>
+                <div><p1>NetBanking</p1><br>
+                <p>Pay by your preferred bank account</p></div>
+            </div>
+            <div class ="card">
+                <input type="radio" name="" id="">
+                 <div><img src="https://cdn-icons-png.flaticon.com/512/3359/3359235.png" alt=""></div>
+                <div><p1>Wallets</p1><br>
+                <p>Pay with your preferred wallet</p></div>
+            </div>
+            <div class ="card">
+                <input type="radio" name="" id="">
+                 <div><img src="https://pixlok.com/wp-content/uploads/2021/01/Bhim-Icon.jpg" alt=""></div>
+                <div><p1>UPI</p1><br>
+                <p>Pay with your preferred UPI Id</p></div>
+            </div>
+            
+        </div>
+        <div class="card">
+            <div><img src="https://i1.lmsin.net/website_images/common/images/basket/ico-gift.png" alt=""></div>
+            <div><p>Got a promo code ?</p> <a href="promoCode.html">Use it here !</a></div>
+        </div>
+        <div class="card">
+            <div><img src="https://i1.lmsin.net/website_images/in/giftcards/gift-card-icon.svg" alt=""></div>
+            <div><p>Have a gift card ?</p> <a href="giftCard.html">Use it here !</a></div>
+        </div>
+        <div id="pay">
+            <p>By clicking on Proceed to Payment, you agree to our <a href="">Terms and Conditions</a></p>
+            <div id="button">Pay Now</div>
+        </div>
     </div>
+     <div id="orderSummary">
+          <p>Your Order Summary</p>
+          <div id="itemDetails"></div>
+          <div id="checkout">
+            <div><p>Subtotal : </p><p2></p2></div>
+            <div><p>Standard Ground Shipping : </p>  <p3>FREE</p3></div>
+            <div><p>TOTAL :</p><p4></p4></div>
+        </div>
+          <div></div>
+     </div>
 </body>
 </html>
+
+<script src="CheckOut.js"></script>
+

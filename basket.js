@@ -66,4 +66,5 @@ function removeItem(e,i){
 
 function toPayment(){
     console.log("toPayments page");
+    window.location.href = "CheckOut.html";
 }
