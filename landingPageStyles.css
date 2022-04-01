@@ -2,8 +2,11 @@
     font-family: proxima-nova, sans-serif;
     font-style: normal;
     font-weight: 400;
+    
 }
-
+p{
+    font-size: 50px;
+}
 #container{
     display:flex;
     font-size: 25px;
@@ -127,7 +130,7 @@ div > input{
     margin-bottom: 60px;
 }
 .shopping-list > p{
-    font-size:36px;
+    /* font-size:36px; */
     line-height: 51px;
     font-weight: 400;
     margin:15px 0px;
