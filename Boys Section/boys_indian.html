@@ -12,13 +12,31 @@
     ></script>
 
     <link rel="stylesheet" href="../product_list.css">
+    <link rel="stylesheet" href="../footer.css">
     
 
 </head>
 
 <body>
+  <div class="sort">
+    <div>
+      <p class="total-product"></p>
+    </div>
+    <div>
+      <span>Sort by</span>
+      <select id="sortNames" onchange="NameSort()">
+      <option value="rele">Relevence</option>
+      <option value="ascending">Alphabetical</option>
+      <option value="htl">High to Low</option>
+      <option value="lth">Low to High</option>
+      </select>
+    </div>
+    
+  </div>  
     
     <div id="product_list"></div>
+
+    <div id="Footer"></div>
 
 </body>
 
@@ -30,5 +48,40 @@
 <script>
 
 displayData(boys_indian);
+function NameSort() {
+      //console.log('inside name sort')
+      var selected = document.querySelector("#sortNames").value;
+      console.log(selected);
+
+      if (selected == "ascending") {
+        boys_indian.sort(function (a, b) {
+          if (a.name > b.name) return 1;
+          if (a.name < b.name) return -1;
+          return 0;
+        });
+        displayData(boys_indian);
+      }
+
+      if (selected == "htl") {
+        boys_indian.sort(function (a, b) {
+          return b.price - a.price;
+        });
+        displayData(boys_indian);
+      }
+
+      if (selected == "lth") {
+        boys_indian.sort(function (a, b) {
+          return a.price - b.price;
+        });
+        displayData(boys_indian);
+      }
+
+      if(selected == "rele"){
+        displayData(boys_indian)
+      }
+  }
 
 </script>
+
+
+<script src="../footer.js"></script>

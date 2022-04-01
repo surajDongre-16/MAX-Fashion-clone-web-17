@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Essentials</title>
+    <title>Document</title>
 
     <script
       src="https://kit.fontawesome.com/24c494a6b6.js"
@@ -13,27 +13,27 @@
 
     <link rel="stylesheet" href="../product_list.css">
     <link rel="stylesheet" href="../footer.css">
-
     
 
 </head>
 
 <body>
-  <div class="sort">
-    <div>
-      <p class="total-product"></p>
-    </div>
-    <div>
-      <span>Sort by</span>
-      <select id="sortNames" onchange="NameSort()">
-      <option value="rele">Relevence</option>
-      <option value="ascending">Alphabetical</option>
-      <option value="htl">High to Low</option>
-      <option value="lth">Low to High</option>
-      </select>
-    </div>
+    <div class="sort">
+        <div>
+          <p class="total-product"></p>
+        </div>
+        <div>
+          <span>Sort by</span>
+          <select id="sortNames" onchange="NameSort()">
+          <option value="rele">Relevence</option>
+          <option value="ascending">Alphabetical</option>
+          <option value="htl">High to Low</option>
+          <option value="lth">Low to High</option>
+          </select>
+        </div>
+        
+      </div>  
     
-  </div>  
     <div id="product_list"></div>
 
     <div id="Footer"></div>
@@ -47,40 +47,39 @@
 
 <script src="../AllData.js"></script>
 
-
 <script>
 
-displayData(girls_essentials);
+displayData(Men_Indianwear);
 function NameSort() {
       //console.log('inside name sort')
       var selected = document.querySelector("#sortNames").value;
       console.log(selected);
 
       if (selected == "ascending") {
-        girls_essentials.sort(function (a, b) {
+        Men_Indianwear.sort(function (a, b) {
           if (a.name > b.name) return 1;
           if (a.name < b.name) return -1;
           return 0;
         });
-        displayData(girls_essentials);
+        displayData(Men_Indianwear);
       }
 
       if (selected == "htl") {
-        girls_essentials.sort(function (a, b) {
+        Men_Indianwear.sort(function (a, b) {
           return b.price - a.price;
         });
-        displayData(girls_essentials);
+        displayData(Men_Indianwear);
       }
 
       if (selected == "lth") {
-        girls_essentials.sort(function (a, b) {
+        Men_Indianwear.sort(function (a, b) {
           return a.price - b.price;
         });
-        displayData(girls_essentials);
+        displayData(Men_Indianwear);
       }
 
       if(selected == "rele"){
-        displayData(girls_essentials)
+        displayData(Men_Indianwear)
       }
   }
 
