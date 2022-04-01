@@ -20,7 +20,8 @@ function displayData(Data){
         var price=document.createElement("h3");
         var rupee_sign=document.createElement("span");
         rupee_sign.innerHTML=`<i class='fa-solid fa-indian-rupee-sign'></i> `;
-        rupee_sign.style.fontSize="12px"
+        rupee_sign.style.fontSize="12px";
+        rupee_sign.style.opacity=1;
         price.append(rupee_sign,ele.price);
         price.style.margin="8px 0px";
     
@@ -29,7 +30,7 @@ function displayData(Data){
         like.setAttribute("class","like");
         
         var like_img=document.createElement("img");
-        like_img.src="https://cdn-icons.flaticon.com/png/512/3641/premium/3641323.png?token=exp=1648784003~hmac=f7a487f4b3a77470e8e6aaf0a407dfb2";
+        like_img.src="../like.png";
         
         like.append(like_img);
     
@@ -69,12 +70,11 @@ function DisplayAddToCartButton(){
     event.target.querySelector("#Basket").style.cursor="pointer";
 }
 
+
 function HideAddToCartButton(){
     event.target.querySelector("#Basket").style.opacity=0;
 
 }
-
-
 
 
 
