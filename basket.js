@@ -1,70 +1,35 @@
-var basketItems = JSON.parse(localStorage.getItem("toBasket"));
+var cart = JSON.parse(localStorage.getItem("tocart")) || []
+// window.location.reload()
+var total=cart.reduce(function (sum,el){
+    return Number(sum+el.price)
+},0)
+console.log(total)
+var length=cart.length
+document.querySelector("#itemsInCart").innerText=`Your Shopping Basket (${length} items)`
 
-var N = basketItems.length;
-var h1 = document.querySelector("#itemsInCart");
-h1.innerText = `Your Shopping Basket (${N} items)`;
-
-
-
-var subTotal = 0;
-basketItems.map(function(e,i){
-    var row = document.createElement("tr");
-    row.setAttribute("class","item");
-
-    var item = document.createElement("td");
-    var image = document.createElement("img");
-    image.setAttribute("src",e.img_1)
-    
-    item.append(image);
-    
-
-    var desc = document.createElement("td");
-    var itemName = document.createElement("h4");
-    itemName.innerText = e.name;
-    var color = document.createElement("p");
-    color.innerText = "Color : Multicolor";
-    var size = document.createElement("p");
-    size.innerText = "-";
-    var removebtn = document.createElement("button");
-    removebtn.innerText = "remove";
-    removebtn.addEventListener("click",function(){
-        removeItem(e,i)
+cart.map(function (el, index){
+    // console.log(el.img_1)
+    var tr=document.createElement("tr")
+    var td1=document.createElement("img")
+    td1.src=el.img_1
+    var td2=document.createElement("td")
+    td2.innerText=el.name
+    var td3=document.createElement("td")
+    td3.innerText=el.price
+    var btn=document.createElement("button")
+    btn.setAttribute("class","remove")
+    btn.innerText="remove"
+    btn.addEventListener("click",function(){
+        removeFunction(el,index)
     })
-    desc.append(itemName,color,size,removebtn);
 
-    var price = document.createElement("td");
-    price.innerText = e.price;
+    tr.append(td1,td2,td3,btn)
 
-    var quantity = document.createElement("td");
-    quantity.innerText = "1";
-   
-
-    var totalPrice = document.createElement("td");
-    totalPrice.innerText = Number(price.innerText) * Number(localStorage.getItem("quantity"));
-    
-    subTotal += Number(totalPrice.innerText);
-    console.log(price.innerText, localStorage.getItem("quantity"));
-    row.append(item,desc,price,quantity,totalPrice);
-    document.querySelector("tbody").append(row);
-
-
-
+    document.querySelector("tbody").append(tr)
 })
-//Proceed To Checkout
-var subTot = document.querySelector("p2");
-subTot.innerText = subTotal;
-var tot = document.querySelector("p4");
-tot.innerText = subTotal;
-var button = document.querySelector("#button");
-button.addEventListener("click",toPayment);
 
-function removeItem(e,i){
-    basketItems.splice(i,1);
-    localStorage.setItem("toBasket",JSON.stringify(basketItems));
-    window.location.reload;
-}
-
-function toPayment(){
-    console.log("toPayments page");
-    window.location.href = "CheckOut.html";
+function removeFunction(el,index){
+    cart.splice(index,1)
+    localStorage.setItem("tocart",JSON.stringify(cart))
+    window.location.reload()
 }

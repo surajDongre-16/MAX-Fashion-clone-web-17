@@ -1,4 +1,4 @@
-var basket = JSON.parse(localStorage.getItem("toBasket")) || [];
+var cart = JSON.parse(localStorage.getItem("tocart")) || [];
 
 function displayData(Data){
     document.querySelector("#product_list").innerHTML = ""
@@ -77,14 +77,12 @@ function HideAddToCartButton(){
 }
 
 
-
-
 //Basket Function   
 function addToBasket(ele){
-    // console.log("hello")
-    basket.push(ele);
-    localStorage.setItem("toBasket",JSON.stringify(basket));
-    console.log(basket);
+    console.log("hello")
+    cart.push(ele);
+    localStorage.setItem("tocart",JSON.stringify(cart));
+    console.log(cart);
 }
 
 // total products count
