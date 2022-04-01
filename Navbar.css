@@ -1,0 +1,167 @@
+*{
+    font-family: proxima nova, sans-serif;
+}
+
+
+#Upper_nav{
+    margin-top: -8px;
+    margin-left: -8px;
+    height:43px;
+    width:101.1%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+}
+
+#Upper_nav>div{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#Upper_nav>div:first-child{
+    margin-left: 9.2%;
+    width:28%;
+}
+
+#Upper_nav>div:last-child{
+    margin-right: 10.4%;
+    align-items: center;
+    width:19%;
+    justify-content: space-between;
+}
+
+#Upper_nav>div:first-child h4{
+    font-weight: 500;
+    font-size: 14px;
+}
+
+#Upper_nav>div:last-child h6{
+    margin:10px 0px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+#Upper_nav>div div{
+    display: flex;
+    align-items: center;
+    color:white;
+
+}
+
+
+#Upper_nav>div div h4{
+    margin-left: 10px;
+}
+
+#Mid_nav{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background-color: #f7f8f7;
+}
+
+#Mid_nav>div:first-child{
+    margin-left: 8%;
+}
+
+#Mid_nav>div:first-child>img{
+    height:37px;
+    cursor: pointer;
+}
+
+
+.mid_li ul{
+    display: inline-flex;
+    list-style: none;
+    padding:0px;
+}
+
+.mid_li ul li{
+    padding:0px 15px;
+    font-size: 14px;
+    line-height: 50px;
+    font-weight: 600;
+}
+
+.mid_li ul li a{
+    text-decoration: none;
+    color:black;
+}
+
+.Sub_menu_1{
+    display: none;
+}
+
+.Sub_menu_2{
+    display: none;
+}
+
+.Sub_menu_3{
+    display: none;
+}
+
+.Sub_menu_4{
+    display: none;
+}
+
+.mid_li ul li:hover .Sub_menu_1{
+    display: block;
+    position:absolute;
+    margin-top: 10px;
+    margin-left: -7.8%;
+}
+
+.mid_li ul li:hover .Sub_menu_2{
+    display: block;
+    position:absolute;
+    margin-top: 10px;
+    margin-left: -13.1%;
+}
+
+.mid_li ul li:hover .Sub_menu_3{
+    display: block;
+    position:absolute;
+    margin-top: 10px;
+    margin-left: -17.3%;
+}
+
+.mid_li ul li:hover .Sub_menu_4{
+    display: block;
+    position:absolute;
+    margin-top: 10px;
+    margin-left: -21.3%;
+}
+
+
+#Search_bar{
+    height: 34px;
+    width:29%;
+    margin-left: 16px;
+    background-color: #ecedeb ;
+    
+    border: 1px solid black;
+}
+
+#Sign-up{
+    display: flex;
+    width:17%;
+    margin-left: 150px;
+    font-size: 14px ;
+    font-weight: 600;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
