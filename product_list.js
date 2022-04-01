@@ -65,10 +65,13 @@ function displayData(Data){
 
 function DisplayAddToCartButton(){
     event.target.querySelector("#Basket").style.opacity=1;
+    event.target.style.cursor="pointer";
+    event.target.querySelector("#Basket").style.cursor="pointer";
 }
 
 function HideAddToCartButton(){
     event.target.querySelector("#Basket").style.opacity=0;
+
 }
 
 
