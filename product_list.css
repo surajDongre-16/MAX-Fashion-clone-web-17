@@ -33,3 +33,18 @@
     width:25px;
     border-radius: 50%;
 }
+
+#Basket{
+    width:100%;
+    opacity: 0;
+    background-color: #303ab2;
+    color:white;
+    font-weight: 600;
+    font-size: 14px;
+    padding:5.5%;
+    border: none;
+    border-radius:3px;
+}
+
+
+

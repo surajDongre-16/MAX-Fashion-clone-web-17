@@ -4,7 +4,10 @@ function displayData(Data){
 
     Data.map(function(ele){
         var box=document.createElement("div");
-        box.style.margin="16px 0px"
+        box.setAttribute("class","child_div")
+        box.addEventListener("mouseover",DisplayAddToCartButton);
+        box.addEventListener("mouseleave",HideAddToCartButton);
+        box.style.margin="-2% 0px"
     
         var img=document.createElement("img");
         img.src=ele.img_1;
@@ -26,7 +29,7 @@ function displayData(Data){
         like.setAttribute("class","like");
         
         var like_img=document.createElement("img");
-        like_img.src="https://cdn-icons.flaticon.com/png/128/2901/premium/2901197.png?token=exp=1648635778~hmac=06c456c3dc80772809d7c530a0e931d2";
+        like_img.src="https://cdn-icons.flaticon.com/png/512/3641/premium/3641323.png?token=exp=1648784003~hmac=f7a487f4b3a77470e8e6aaf0a407dfb2";
         
         like.append(like_img);
     
@@ -37,11 +40,13 @@ function displayData(Data){
         var name=document.createElement("p");
         name.innerText=ele.name;
         name.style.fontSize="14px";
-        name.style.marginTop="-10%";
+        name.style.marginTop="-11%";
         name.style.lineHeight="20px"
 
         var basket = document.createElement("button");
-        basket.innerText = "Add to Basket";
+        basket.addEventListener("mouseover",DisplayAddToCartButton);
+        basket.setAttribute("id","Basket");
+        basket.innerText = "ADD TO BASKET";
         basket.addEventListener("click", function(){
             addToBasket(ele);
         });
@@ -49,14 +54,30 @@ function displayData(Data){
         box.append(img,price_box,name,basket);
     
         document.querySelector("#product_list").append(box);
-    })
+    });
 
 
 };
 
 
+
+
+function DisplayAddToCartButton(){
+    event.target.querySelector("#Basket").style.opacity=1;
+}
+
+function HideAddToCartButton(){
+    event.target.querySelector("#Basket").style.opacity=0;
+}
+
+
+
+
+
+
 //Basket Function   
 function addToBasket(ele){
+    // console.log("hello")
     basket.push(ele);
     localStorage.setItem("toBasket",JSON.stringify(basket));
     console.log(basket);

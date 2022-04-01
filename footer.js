@@ -7,7 +7,7 @@ footer.innerHTML=`<hr style="opacity:0.2">
         <p style="font-size:16px;color:#929391" class="innerPara">Get our latest offers and news straight in your inbox</p>
         <div id="sub">
             <input placeholder="Please enter an email adress" />
-            <button>subscribe</button>
+            <button id="subscribe">subscribe</button>
         </div>
 
     </div>
