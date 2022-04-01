@@ -5,7 +5,7 @@ function displayData(Data){
     Data.map(function(ele, ind,arr){
         var box=document.createElement("div");
         box.setAttribute("class","child_div")
-        box.addEventListener("mouseover",DisplayAddToCartButton);
+        box.addEventListener("mouseenter",DisplayAddToCartButton);
         box.addEventListener("mouseleave",HideAddToCartButton);
         box.style.margin="-2% 0px"
     
