@@ -54,15 +54,14 @@ function displayData(Data){
         box.append(img,price_box,name,basket);
     
         document.querySelector("#product_list").append(box);
-<<<<<<< HEAD
+
     });
 
 
-=======
         countFn(arr.length)
-    })
     
->>>>>>> e0aaa92211fb1756822119196e612f13858b800c
+    
+
 };
 
 

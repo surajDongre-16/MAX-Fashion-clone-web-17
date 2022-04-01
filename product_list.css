@@ -21,9 +21,7 @@ select{
     border:1px solid rgb(200, 200, 200)
 }
 span{
-    margin:25px;
     font-weight: bolder;
-    opacity: 0.5;
 }
 
 #product_list{
