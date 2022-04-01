@@ -1872,6 +1872,7 @@ men_casual=[
       
     }
 ]
+
 Men_jeans=[
     {
         img_1:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010363251-Blue-Darkblue-1000010363251-7292021_01-2100.jpg",
@@ -1898,7 +1899,8 @@ Men_jeans=[
         
     }
 ]
-   men_winterwear=[
+
+men_winterwear=[
     {
         img_1:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010329075-Black-Black-1000010329075-10132021_01-2100.jpg",
             price:899,
@@ -1922,7 +1924,8 @@ Men_jeans=[
             price:599,
         name:"MAX Solid Crew Neck Sweatshirt"
         }
-    ]
+]
+
 Men_formalshirts=[
     {
         img_1:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010519099-Green-Green-1000010519099-10132021_01-2100.jpg",
@@ -1945,6 +1948,7 @@ Men_formalshirts=[
         name:"MAX Printed Slim Fit Formal Shirt"
     }
 ]
+
 Men_Trousers=[
     {
         img_1:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010780452-Green-Green-1000010780452-15122021_01-2100.jpg",
@@ -1967,8 +1971,9 @@ Men_Trousers=[
             price:1299,
         name:"MAX Solid Carrot Fit Formal Trousers"
      }
-    ]
-    Men_Indianwear=[
+]
+
+Men_Indianwear=[
      {
         img_1:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010821568-Blue-NAVY-1000010821568-12012022_01-2100.jpg",
             price:999
@@ -1993,6 +1998,7 @@ Men_Trousers=[
 
     },
 ]
+
 Men_Active=[
                                                                                                     
     {
@@ -2017,8 +2023,9 @@ Men_Active=[
             price:399,
         name:"MAX Solid Elasticated Shorts"
           }
-        ]
-        men_loungwear=[                                                                                                          
+]
+
+men_loungwear=[                                                                                                          
     {
         img_1:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000009788920-Grey-Melange-1000009788920-1112021_01-2100.jpg",
             price:499,
@@ -2040,10 +2047,10 @@ Men_Active=[
         name:"MAX Solid Lounge Pants"
     
         }    
-        ]
+]
 
 
-  men_innerwear=[
+men_innerwear=[
     {
         img_1:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010616503-Grey-Charcoal-1000010616503-8182021_01-2100.jpg",
             price:399,
@@ -2066,6 +2073,7 @@ Men_Active=[
         name:"MAX Solid Briefs - Set of 3"
     }
 ]
+
 men_footwear=[
 
     {
@@ -2092,6 +2100,7 @@ men_footwear=[
         name:"MAX Textured Lace-Up Shoes"
     }
 ]
+
 men_Accessories=[
 
     {
