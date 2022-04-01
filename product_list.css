@@ -9,6 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 35px;
     
 }
 .total-product{
@@ -22,6 +23,7 @@ select{
 }
 span{
     font-weight: bolder;
+    opacity: 0.5;
 }
 
 #product_list{
