@@ -1,8 +1,8 @@
 var basket = JSON.parse(localStorage.getItem("toBasket")) || [];
 
 function displayData(Data){
-
-    Data.map(function(ele){
+    document.querySelector("#product_list").innerHTML = ""
+    Data.map(function(ele, ind,arr){
         var box=document.createElement("div");
         box.setAttribute("class","child_div")
         box.addEventListener("mouseover",DisplayAddToCartButton);
@@ -50,13 +50,19 @@ function displayData(Data){
         basket.addEventListener("click", function(){
             addToBasket(ele);
         });
-    
+
         box.append(img,price_box,name,basket);
     
         document.querySelector("#product_list").append(box);
+<<<<<<< HEAD
     });
 
 
+=======
+        countFn(arr.length)
+    })
+    
+>>>>>>> e0aaa92211fb1756822119196e612f13858b800c
 };
 
 
@@ -83,5 +89,8 @@ function addToBasket(ele){
     console.log(basket);
 }
 
-
+// total products count
+function countFn(count){
+    document.querySelector(".total-product").innerText=`${count} Products`
+}
 
