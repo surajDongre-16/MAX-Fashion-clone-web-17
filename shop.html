@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/985c64737c.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+    <style>
+        .box {
+            margin-top: 20%;
+            ;
+        }
+
+
+        * {
+            font-family: proxima-nova, sans-serif;
+            font-style: normal;
+            font-weight: 400;
+        }
+
+        #container {
+            margin-left: 60%;
+            margin-top: 11.5%;
+        }
+
+        #container:hover {
+            cursor: pointer;
+        }
+
+        .paisa {
+            display: flex;
+        }
+
+        p+h1 {
+            padding-left: 5px;
+        }
+
+        .paisa>p {
+            font-size: 21px;
+
+        }
+
+        h1+p {
+            padding-top: 18px;
+            padding-left: 15px;
+            font-size: 19px;
+        }
+
+        .free {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        #pricing {
+            display: flex;
+
+        }
+
+        p>img {
+            height: 20px;
+            width: 20px
+        }
+
+        .free+p {
+            padding-left: 71px;
+            font-size: 21.00px;
+
+        }
+
+        p>span {
+            padding-left: 40%;
+            font-size: 21px;
+            text-decoration: underline;
+        }
+
+        div>p {
+            font-size: 21px;
+        }
+
+        #size {
+            display: flex;
+            gap: 32px;
+
+        }
+
+        #size>div {
+
+            height: 35px;
+            width: 45px;
+            border: 3px solid grey;
+            text-align: center;
+            padding-top: 12px;
+        }
+
+        #size:hover {
+            cursor: pointer;
+        }
+
+        button {
+            width: 77%;
+            height: 60px;
+            background-color: blue;
+            color: white;
+            margin-top: 5%;
+
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+
+        i {
+            margin-top: 5%;
+            background-color: white;
+            border: black;
+            padding-right: 20px;
+
+        }
+
+        i:hover {
+            cursor: pointer;
+            color: #f25139
+        }
+
+        .promotion {
+
+            color: #f25139;
+            background-color: #fff4f4;
+            width: 35%;
+            font-size: 14px;
+
+        }
+
+        .promotion {
+            font-size: 14px;
+        }
+
+        .discount>p {
+            font-size: 14px;
+        }
+
+        .collect>span {
+            font-size: 14px;
+        }
+
+        .collect>p {
+            font-size: 14px;
+        }
+
+        .pay>span {
+            font-size: 14px;
+        }
+
+        .pay>p {
+            font-size: 14px;
+        }
+
+        .order>span {
+            font-size: 14px;
+        }
+
+        .order>p {
+            font-size: 14px;
+            ;
+        }
+
+        .order_input {
+            display: flex;
+
+        }
+
+        #input {
+            padding: 10px 15px 10px 15px;
+            width: 40%;
+            height: 32px;
+            margin-top: 10px;
+
+
+        }
+
+        .check {
+            width: 20%;
+            margin-left: 10px;
+            margin-bottom: 20px;
+            /* padding: 5px; */
+
+        }
+
+
+        .Browse {
+            text-decoration: underline;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            cursor: pointer;
+
+        }
+
+        .overview>p {
+            font-size: 14px;
+        }
+
+        ul>li {
+            font-size: 14px;
+            line-height: 16px;
+
+        }
+
+        .readless {
+            margin-left: 20px;
+            text-decoration: underline;
+            color: black;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        hr {
+            border: 0.5px solid grey;
+        }
+
+        .socailmedia {
+            margin-top: 20px;
+
+        }
+
+        .socailmedia>span {
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+
+        /* -----------------#container1----------------- */
+
+        * {
+            font-family: proxima-nova, sans-serif;
+            font-style: normal;
+            font-weight: 400;
+        }
+
+        #container1 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            margin: auto;
+            margin-left: 20px;
+
+        }
+
+        select+button {
+            width: 60%;
+            height: 40px;
+            color: blue;
+            background-color: white;
+            font-weight: bold;
+        }
+
+        select {
+            height: 40px;
+            width: 100px;
+            margin-right: 10px;
+        }
+
+        /* .review */
+    </style>
+</head>
+
+<body>
+    <div id="img_js"></div>
+
+    <div id="container">
+
+        <div class="paisa">
+            <p>₹</p>
+            <h1>499</h1>
+            <p>Inclusive of all taxes</p>
+        </div>
+        <div id="pricing">
+            <p class="free">Free shipping on all orders</p>
+            <p> <img src="https://i1.lmsin.net/website_images/static-pages/brand_exp/brand2images/icons/points-16.svg"
+                    alt=""> Earn 2 Points <img src="https://img.icons8.com/ios/72/help.png" alt=""></p>
+
+        </div>
+        <div>
+            <p>Color: Yellow </p>
+        </div>
+        <div>
+            <p>Size: <span>size Guide</span> </p>
+
+        </div>
+        <div id="size">
+            <div>XS</div>
+            <div>S</div>
+            <div>M</div>
+            <div>L</div>
+            <div>XL</div>
+            <div>XXL</div>
+        </div>
+        <div id="addtobasket">
+            <button>ADD TO BASKET </button>
+            <!-- <img src="https://i1.lmsin.net/website_images/static-pages/brand_exp/brand2images/prod/Sprite_icons.svg" alt=""> -->
+
+
+
+        </div>
+        <p><i class="fa-solid fa-heart"></i>Add to Favourites</p>
+        <hr>
+        <div>
+            <p class="promotion">PROMOTION OFFER</p>
+            <div class="discount">
+                <p>Get Flat 200 Off on Rs.1999. Code- MAX200 | Get Flat 100 <br> Off on just Rs.999, Only on First
+                    Purchase.Code- <br> NEW100<a href="https://google.com"> Browse promotion</a> </p>
+                <hr>
+
+            </div>
+            <div class="collect">
+                <img src="https://i1.lmsin.net/website_images/static-pages/brand_exp/brand2images/icons/cc.svg" alt="">
+                <span>Click & Collect</span>
+                <p>Order this product now and collect it from a store of <br> your choice. <a
+                        href="https://google.com">Learn more</a> </p>
+
+
+            </div>
+            <div class="pay">
+                <img src="https://i1.lmsin.net/website_images/static-pages/brand_exp/brand2images/icons/installment-black-24.svg"
+                    alt="">
+                <span>Pay in installments</span>
+                <p>Pay in easy installments on orders of ₹ 3,000 or more. <br> Available for select banks. <a
+                        href="https://google.com">Learn more</a> </p>
+
+            </div>
+            <div class="order">
+                <img src="https://i1.lmsin.net/website_images/static-pages/brand_exp/brand2images/icons/order-black-24.svg"
+                    alt="">
+                <span>When will I receive my order?</span>
+                <br>
+                <div class="order_input">
+                    <input id="input" type="text" placeholder="Enter Your Pincode">
+                    <span class="check"><button>check</button></span>
+
+                </div>
+                <hr>
+
+            </div>
+
+
+            <div class="overview">
+                <h3>Overview</h3>
+                <p>Give a trendy change in your casual wardrobe with this T-shirt designed with half sleeves, and a polo
+                    neckline.</p>
+                <ul>
+                    <li>Design : Solid</li>
+                    <li>Sleeve Length : Half Sleeves</li>
+                    <li>
+                        Fabric : Cotton Blend
+                    </li>
+                    <li>Fit : Slim Fit</li>
+                    <li>Care Instructions : Machine Wash</li>
+                    <li>Model Wears : Size M,has Height 6'0" and Chest 38"</li>
+                    <li>Return Policy : This product is returnable within 30 days of delivery</li>
+                    <li>returnable within 30 days of delivery
+                        Product : Polo T-shirt</li>
+                    <li>Country of Origin : India</li>
+                    <li>Manufactured By : Lifestyle Int Pvt Ltd, 77 Degree Town Centre, Building No. 3, West Wing, Off
+                        HAL Airport Road, Yamlur, Bangalore-560037</li>
+                    <li>For Consumer Complaints Contact : Manager Commercial, Lifestyle International Pvt Ltd,
+                        1800-123-1444</li>
+                    <li>Net Quantity : 1</li>
+                </ul>
+                <a class="readless" href="https://google.com">Read Less</a>
+                <span> <img class
+                        src="https://i1.lmsin.net/website_images/static-pages/brand_exp/brand2images/icons/chevicon-up-12.svg"
+                        alt=""></span>
+                <hr>
+            </div>
+            <div class="socailmedia">
+                <span> <img
+                        src="https://i1.lmsin.net/website_images/static-pages/brand_exp/brand2images/icons/facebook-16.svg"
+                        alt=""> Share </span>
+                <span><img
+                        src="https://i1.lmsin.net/website_images/static-pages/brand_exp/brand2images/icons/twitter-16.svg"
+                        alt="">Tweet </span>
+                <span><img
+                        src="https://i1.lmsin.net/website_images/static-pages/brand_exp/brand2images/icons/pinterest-16.svg"
+                        alt="">Pin </span>
+                <span>
+                    <img src="https://i1.lmsin.net/website_images/static-pages/brand_exp/brand2images/icons/copy-16.svg"
+                        alt=""> Copy Link </span>
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <h1>Complete the Look</h1>
+    <div id="container1">
+
+        <div>
+            <img src="https://10d06a4d12b851f1b2d5-6729d756a2f36342416a9128f1759751.lmsin.net/1000010921696-Green-GREEN-1000010921696-12012022_01-345.jpg"
+                alt="">
+
+            <p>₹ 880</p>
+            <p>MAX Striped Slim Fit Polo T-shirt</p>
+            <div>
+                <select name="" id="">
+                    <option value="">Blue</option>
+                    <option value="">Grey</option>
+                </select>
+                <select name="" id="">
+                    <option value="">XS(Out of Stock</option>
+                    <option value="">S</option>
+                    <option value="">M</option>
+                    <option value="">XL</option>
+                    <option value="">XXL</option>
+                </select>
+                <button>Add To Basket</button>
+            </div>
+
+        </div>
+        <div>
+            <img src="https://10d06a4d12b851f1b2d5-6729d756a2f36342416a9128f1759751.lmsin.net/1000010930685-Black-BLACK-1000010930685-22122021_01-345.jpg"
+                alt="">
+            <p>₹ 880</p>
+            <p>MAX Striped Slim Fit Polo T-shirt</p>
+            <div>
+                <select name="" id="">
+                    <option value="">Blue</option>
+                    <option value="">Grey</option>
+                </select>
+                <select name="" id="">
+                    <option value="">XS(Out of Stock</option>
+                    <option value="">S</option>
+                    <option value="">M</option>
+                    <option value="">XL</option>
+                    <option value="">XXL</option>
+                </select>
+                <button>Add To Basket</button>
+            </div>
+
+        </div>
+        <div>
+            <img src="https://10d06a4d12b851f1b2d5-6729d756a2f36342416a9128f1759751.lmsin.net/1000010403644-Black-Black-1000010403644-9222021_01-345.jpg"
+                alt="">
+            <p>₹ 880</p>
+            <p>MAX Striped Slim Fit Polo T-shirt</p>
+            <div>
+                <select name="" id="">
+                    <option value="">Blue</option>
+                    <option value="">Grey</option>
+                </select>
+                <select name="" id="">
+                    <option value="">XS(Out of Stock</option>
+                    <option value="">S</option>
+                    <option value="">M</option>
+                    <option value="">XL</option>
+                    <option value="">XXL</option>
+                </select>
+                <button>Add To Basket</button>
+            </div>
+
+        </div>
+        <div>
+            <img src="https://10d06a4d12b851f1b2d5-6729d756a2f36342416a9128f1759751.lmsin.net/1000010404186-Blue-NAVY-1000010404186-8122021_01-345.jpg"
+                alt="">
+            <p>₹ 880</p>
+            <p>MAX Striped Slim Fit Polo T-shirt</p>
+            <div>
+                <select name="" id="">
+                    <option value="">Blue</option>
+                    <option value="">Grey</option>
+                </select>
+                <select name="" id="">
+                    <option value="">XS(Out of Stock</option>
+                    <option value="">S</option>
+                    <option value="">M</option>
+                    <option value="">XL</option>
+                    <option value="">XXL</option>
+                </select>
+                <button>Add To Basket</button>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+    <h1>Customers Also Viewed</h1>
+    <div id="container1">
+
+        <div>
+            <img src="https://10d06a4d12b851f1b2d5-6729d756a2f36342416a9128f1759751.lmsin.net/1000010861537-Blue-BLUE-1000010861537-3012022_01-345.jpg"
+                alt="">
+            <p>₹ 880</p>
+            <p>MAX Colourblocked Slim Fit T-shirt</p>
+
+        </div>
+        <div>
+            <img src="https://10d06a4d12b851f1b2d5-6729d756a2f36342416a9128f1759751.lmsin.net/1000010861398-Black-BLACK-1000010861398-3012022_01-345.jpg"
+                alt="">
+            <p>₹ 880</p>
+            <p>MAX Striped Slim Fit Polo T-shirt</p>
+
+
+        </div>
+        <div>
+            <img src="https://10d06a4d12b851f1b2d5-6729d756a2f36342416a9128f1759751.lmsin.net/1000010403644-Black-Black-1000010403644-9222021_01-345.jpg"
+                alt="">
+            <p>₹ 880</p>
+            <p>MAX Striped Slim Fit Polo T-shirt</p>
+
+
+        </div>
+        <div>
+            <img src="https://10d06a4d12b851f1b2d5-6729d756a2f36342416a9128f1759751.lmsin.net/1000010816837-Blue-NAVY-1000010816837-8122021_01-345.jpg"
+                alt="">
+            <p>₹ 880</p>
+            <p>MAX Striped Slim Fit Polo T-shirt</p>
+
+
+
+        </div>
+        <div>
+            <h1>Reviews</h1>
+            <div class="review">
+                <img src="https://i1.lmsin.net/website_images/static-pages/brand_exp/brand2images/icons/write-review.svg"
+                    alt="">
+                <span>What do you think about this product ?</span> <span><button>Review</button></span>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
+<script src="shop.js">
+
+</script>
