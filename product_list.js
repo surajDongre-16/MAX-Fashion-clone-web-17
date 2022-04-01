@@ -73,12 +73,11 @@ function DisplayAddToCartButton(){
     event.target.querySelector("#Basket").style.cursor="pointer";
 }
 
+
 function HideAddToCartButton(){
     event.target.querySelector("#Basket").style.opacity=0;
 
 }
-
-
 
 
 
