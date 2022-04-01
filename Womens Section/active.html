@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="../product_list.css">
+    <link rel="stylesheet" href="../footer.css">
+    <link rel="stylesheet" href="../Sorting Navigation/sorting-style.css">
+
+
+</head>
+
+<body>
+  <!-- YOU SEARCHED FOR -->
+  <p style="margin-left:100px">You searched for</p>
+    <div id="first">
+        <div  style="width:120px ; color:#929391; border:none ; margin-left:-20px"><p style="font-size:16px">Shop For</p></div>
+        <div><a href="../Sorting Navigation/women_nav_sort.html"><p>Women</p></a></div>
+        <div style="width:60px"><a href="../Sorting Navigation/men_nav_sort.html"><p>Men</p></a></div>
+        <div style="width:60px"><a href="../Sorting Navigation/Girl_nav_sort.html"><p>Girl</p></a></div>
+        <div style="width:60px"><a href="../Sorting Navigation/boy_nav_sort.html"><p>Boy</p></a></div>
+    </div>
+    <div id="input">
+      <div class="inner-box">
+        <select>
+          <option ><p >Price</p></option>
+      </select>
+      <select>
+          <option ><p >Browse</p></option>
+          <option value="">ONLINE ONLY (2472)</option>
+          <option value="">New (2072)</option>
+          <option value="">Get 2nd At flat 199 (1916)</option>
+          <option value="">Get 2nd At Flat 99 (916)</option>
+      </select>
+      <select>
+          <option ><p >Brand</p></option>
+          <option>Max (15120)</option>
+          <option>Peter England(24)</option>
+      </select>
+      <select>
+          <option ><p >Size</p></option>
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+          <option value="">4</option>
+          <option value="">5</option>
+          <option value="">6</option>
+      </select>
+      <select>
+          <option><p >Color</p></option>
+      <option value="">Blue</option>
+      <option value="">Black</option>
+      <option value="">white</option>
+      <option value="">yellow</option>
+      </select>
+      </div>
+        
+    </div>
+  <!-- END -->
+  <div class="sort">
+    <div>
+      <p class="total-product"></p>
+    </div>
+    <div>
+      <span>Sort by</span>
+      <select id="sortNames" onchange="NameSort()">
+      <option value="rele">Relevence</option>
+      <option value="ascending">Alphabetical</option>
+      <option value="htl">High to Low</option>
+      <option value="lth">Low to High</option>
+      </select>
+    </div>
+    
+  </div>  
+    <div id="product_list"></div>
+
+    <div id="Footer"></div>
+
+</body>
+
+</html>
+
+
+<script src="../product_list.js"></script>
+
+<script src="../AllData.js"></script>
+
+<script>
+
+displayData(womens_activewear);
+function NameSort() {
+      //console.log('inside name sort')
+      var selected = document.querySelector("#sortNames").value;
+      console.log(selected);
+
+      if (selected == "ascending") {
+        womens_activewear.sort(function (a, b) {
+          if (a.name > b.name) return 1;
+          if (a.name < b.name) return -1;
+          return 0;
+        });
+        displayData(womens_activewear);
+      }
+
+      if (selected == "htl") {
+        womens_activewear.sort(function (a, b) {
+          return b.price - a.price;
+        });
+        displayData(womens_activewear);
+      }
+
+      if (selected == "lth") {
+        womens_activewear.sort(function (a, b) {
+          return a.price - b.price;
+        });
+        displayData(womens_activewear);
+      }
+
+      if(selected == "rele"){
+        displayData(womens_activewear)
+      }
+  }
+
+
+</script>
+
+<script src="../footer.js"></script>

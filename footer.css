@@ -1,0 +1,189 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    width:82%;
+    margin:auto;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.box {
+    display: flex;
+    margin-left: 9%;
+    margin-bottom: 25px;
+    margin-top: 35px;
+}
+
+.innerPara {
+    line-height: 12px;
+    color: #5D5E5C;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
+
+#spc {
+    margin-left: 155px;
+}
+
+#line {
+    margin-top: 40px;
+}
+
+.para {
+    font-size: 15px;
+    color: black;
+    margin-bottom: 20px;
+
+}
+
+.dan {
+
+    border: 1px solid rgb(185, 181, 181);
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 50%;
+    /* justify-content: center; */
+}
+
+#contact {
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    width:55%;
+    margin-left:9%;
+    justify-content: space-between;
+}
+
+#size {
+
+    font-size: 22px;
+    margin-top: 15px;
+
+}
+
+
+#span {
+    font-size: 16px;
+    padding-left: 15px;
+}
+
+.pading {
+    margin-left: -60px;
+    margin-top: 50px;
+    font-size: 15px
+}
+
+.two {
+    display: flex;
+}
+
+.inner>p {
+    line-height: -80px;
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+#contact1 {
+    display: flex;
+    justify-content: right;
+    margin-top: -4%;
+    margin-right: 10%;
+}
+
+#contact1>div {
+    margin-left: 35px;
+}
+
+/* img {
+    height: 60px;
+    width: auto;
+
+} */
+
+#rr {
+    border: 1px solid;
+    height: 100px;
+    width: 180px;
+}
+
+#bottom {
+    display: flex;
+    margin-left:6%;
+}
+
+#font>p {
+    font-size: 13.5px;
+    /* line-height: 5px;
+    margin-top:10px; */
+}
+
+#font {
+    margin-left: 40px;
+}
+
+#mar {
+    margin-left: 35px;
+}
+
+#parent {
+    margin-left: 15px;
+}
+
+#name {
+    width: 82%;
+    opacity: 0.2;
+}
+
+#sub {
+    display: flex;
+    margin-top: 30px;
+}
+
+#subscribe {
+    height: 55px;
+    width: 180px;
+    border:none;
+    background-color: black;
+    border-radius:0px 5px 5px 0px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+input {
+    width: 280px;
+    background-color: #f7f8f7;
+    border: 1px #f7f8f7;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding-left: 30px;
+}
+
+
+#high {
+    display: flex;
+    justify-content: space-between;
+    width:70%;
+    margin-left: 9%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+#lowerimg
+{
+    margin-left: 20px;
+ height:55px;
+ width:auto;
+}
+.lame
+{
+    margin-left: 0px;
+}
+#iimg
+{
+    margin-top: 30px;
+}
+#upperimg
+{
+    height:55px;
+    width:auto;
+}
