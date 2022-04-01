@@ -117,27 +117,27 @@
     <div class="shopping-list">
         <p>Shop Kids wear</p>
         <div class="categories">
-            <div>
+            <div id="img1">
                 <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-B-1-Desktop-Girls-09MAR2022.jpg" alt="">
                 <p class="cat-p">Tops & Tees</p>
             </div>
-            <div>
+            <div id="img2">
                 <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-B-2-Desktop-Girls-09MAR2022.jpg" alt="">
                 <p class="cat-p">Jeans & Trousers</p>
             </div>
-            <div>
+            <div id="img3">
                 <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-B-3-Desktop-Girls-09MAR2022.jpg" alt="">
                 <p class="cat-p">Dresses</p>
             </div>
-            <div>
+            <div id="img4">
                 <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-B-4-Desktop-Girls-09MAR2022.jpg" alt="">
                 <p class="cat-p">Essentials</p>
             </div>
-            <div>
+            <div id="img5">
                 <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-B-5-Desktop-Girls-09MAR2022.jpg" alt="">
                 <p class="cat-p">Indian Wear</p>
             </div>
-            <div>
+            <div id="img6">
                 <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-B-6-Desktop-Girls-09MAR2022.jpg" alt="">
                 <p class="cat-p">Add-ons</p>
             </div>
@@ -216,13 +216,6 @@
    
     <div id="Footer"></div>
 
-    </div>  
-     
-
-    </div>   
-
-
-    <div id="Footer"></div>
 
 </body>
 </html>
@@ -232,5 +225,31 @@
     ></script>
     <script src="moving-img.js"></script>
 
+    <script>
+        document.querySelector("#img1").addEventListener("click",clickfn1)
+        function clickfn1(){
+            window.location.href="../Girls Section/girls_Tees.html"
+        }
+        document.querySelector("#img2").addEventListener("click",clickfn2)
+        function clickfn2(){
+            window.location.href="../Girls Section/girls_jeans.html"
+        }
+        document.querySelector("#img3").addEventListener("click",clickfn3)
+        function clickfn3(){
+            window.location.href="../Girls Section/girls_dress.html"
+        }
+        document.querySelector("#img4").addEventListener("click",clickfn4)
+        function clickfn4(){
+            window.location.href="../Girls Section/girls_essentials.html"
+        }
+        document.querySelector("#img5").addEventListener("click",clickfn5)
+        function clickfn5(){
+            window.location.href="../Girls Section/girls_indian.html"
+        }
+        document.querySelector("#img6").addEventListener("click",clickfn6)
+        function clickfn6(){
+            window.location.href="../Girls Section/girls_addon.html"
+        }
+     </script>
 
     <script src="../footer.js"></script>

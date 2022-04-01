@@ -100,51 +100,51 @@
     <div class="shopping-list">
         <p>Shop By Category</p>
         <div class="categories">
-            <div>
+            <div id="img1">
                 <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-A-1-Desktop-Women-14Feb2022.jpg" alt="">
                 <p class="cat-p">Tops & Tees</p>
             </div>
-            <div>
+            <div id="img2">
                 <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-A-2-Desktop-Women-14Feb2022.jpg" alt="">
                 <p class="cat-p">Dresses</p>
             </div>
-            <div>
+            <div id="img3">
                 <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-A-3-Desktop-Womenn-14Feb20222.jpg" alt="">
                 <p class="cat-p">Winterwear</p>
             </div>
-            <div>
+            <div id="img4">
                 <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-A-4-Desktop-Women-14Feb2022.jpg" alt="">
                 <p class="cat-p">Bottoms</p>
             </div>
-            <div>
+            <div id="img5">
                 <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-A-5-Desktop-Women-14Feb2022.jpg" alt="">
                 <p class="cat-p">Kurtas</p>
             </div>
-            <div>
+            <div id="img6">
                 <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-A-6-Desktop-Women-14Feb2022.jpg" alt="">
                 <p class="cat-p">Suits & Sets</p>
             </div>
-            <div>
+            <div id="img7">
                 <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-A-7-Desktop-Women-14Feb2022.jpg" alt="">
                 <p class="cat-p">Fusion Dresses</p>
             </div>
-            <div>
+            <div id="img8">
                 <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-A-8-Desktop-Women-14Feb2022.jpg" alt="">
                 <p class="cat-p">Ethnic Bottoms</p>
             </div>
-            <div>
+            <div id="img9">
                 <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-A-9-Desktop-Women-14Feb2022.jpg" alt="">
                 <p class="cat-p">Sleepwear</p>
             </div>
-            <div>
+            <div id="img10">
                 <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-A-10-Desktop-Women-14Feb2022.jpg" alt="">
                 <p class="cat-p">Activewear</p>
             </div>
-            <div>
+            <div id="img11">
                 <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-A-11-Desktop-Women-14Feb2022.jpg" alt="">
                 <p class="cat-p">Lingerie</p>
             </div>
-            <div>
+            <div id="img12">
                 <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-A-12-Desktop-Women-14Feb2022.jpg" alt="">
                 <p class="cat-p">Add Ons</p>
             </div>
@@ -221,9 +221,6 @@
 
     <div id="Footer"></div>
 
-
-    <div id="Footer"></div>
-
 </body>
 </html>
 <script
@@ -231,5 +228,56 @@
       crossorigin="anonymous"
     ></script>
     <script src="moving-img.js"></script>
+
+    <script>
+        document.querySelector("#img1").addEventListener("click",clickfn1)
+        function clickfn1(){
+            window.location.href="../Womens Section/tees.html"
+        }
+        document.querySelector("#img2").addEventListener("click",clickfn2)
+        function clickfn2(){
+            window.location.href="../Womens Section/dresses.html"
+        }
+        document.querySelector("#img3").addEventListener("click",clickfn3)
+        function clickfn3(){
+            window.location.href="../Womens Section/winter.html"
+        }
+        document.querySelector("#img4").addEventListener("click",clickfn4)
+        function clickfn4(){
+            window.location.href="../Womens Section/bottom.html"
+        }
+        document.querySelector("#img5").addEventListener("click",clickfn5)
+        function clickfn5(){
+            window.location.href="../Womens Section/kurta.html"
+        }
+        document.querySelector("#img6").addEventListener("click",clickfn6)
+        function clickfn6(){
+            window.location.href="../Womens Section/suits.html"
+        }
+        document.querySelector("#img7").addEventListener("click",clickfn7)
+        function clickfn7(){
+            window.location.href="../Womens Section/fusion.html"
+        }
+        document.querySelector("#img8").addEventListener("click",clickfn8)
+        function clickfn8(){
+            window.location.href="../Womens Section/ethinic.html"
+        }
+        document.querySelector("#img9").addEventListener("click",clickfn9)
+        function clickfn9(){
+            window.location.href="../Womens Section/sleepwear.html"
+        }
+        document.querySelector("#img10").addEventListener("click",clickfn10)
+        function clickfn10(){
+            window.location.href="../Womens Section/active.html"
+        }
+        document.querySelector("#img11").addEventListener("click",clickfn11)
+        function clickfn11(){
+            window.location.href="../Womens Section/lingeri.html"
+        }
+        document.querySelector("#img12").addEventListener("click",clickfn12)
+        function clickfn12(){
+            window.location.href="../Womens Section/addon.html"
+        }
+     </script>
 
     <script src="../footer.js"></script>

@@ -111,51 +111,51 @@
     <div class="shopping-list">
         <p>Shop By Category</p>
         <div class="categories">
-            <div>
+            <div id="img1">
                 <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-A-1-Desktop-Men-14Feb2022.jpg" alt="">
                 <p class="cat-p">Tops & Tees</p>
             </div>
-            <div>
+            <div id="img2">
                 <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-A-2-Desktop-Men-14Feb20221.jpg" alt="">
                 <p class="cat-p">Casual Shirts</p>
             </div>
-            <div>
+            <div id="img3">
                 <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-A-3-Desktop-Menn-14Feb2022.jpg" alt="">
                 <p class="cat-p">Jeans</p>
             </div>
-            <div>
+            <div id="img4">
                 <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-A-4-Desktop-Men-14Feb20222.jpg" alt="">
                 <p class="cat-p">Winterwear</p>
             </div>
-            <div>
+            <div id="img5">
                 <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-A-5-Desktop-Men-14Feb2022.jpg" alt="">
                 <p class="cat-p">Formal Shirts</p>
             </div>
-            <div>
+            <div id="img6">
                 <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-A-6-Desktop-Men-14Feb2022.jpg" alt="">
                 <p class="cat-p">Trousers</p>
             </div>
-            <div>
+            <div id="img7">
                 <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-A-7-Desktop-Men-14Feb2022.jpg" alt="">
                 <p class="cat-p">Indianwear</p>
             </div>
-            <div>
+            <div id="img8">
                 <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-A-8-Desktop-Men-14Feb2022.jpg" alt="">
                 <p class="cat-p">Activewear</p>
             </div>
-            <div>
+            <div id="img9">
                 <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-A-9-Desktop-Men-14Feb20222.jpg" alt="">
                 <p class="cat-p">Loungewear</p>
             </div>
-            <div>
+            <div id="img10">
                 <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-A-10-Desktop-Men-14Feb2022.jpg" alt="">
                 <p class="cat-p">Innerwear</p>
             </div>
-            <div>
+            <div id="img11">
                 <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-A-11-Desktop-Men-14Feb20222.jpg" alt="">
                 <p class="cat-p">Footwear</p>
             </div>
-            <div>
+            <div id="img12">
                 <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/PC-A-12-Desktop-Men-14Feb2022.jpg" alt="">
                 <p class="cat-p">Accessories</p>
             </div>
@@ -243,5 +243,56 @@
       crossorigin="anonymous"
     ></script>
     <script src="moving-img.js"></script>
+
+    <script>
+        document.querySelector("#img1").addEventListener("click",clickfn1)
+        function clickfn1(){
+            window.location.href="../Mens Section/mensTshirt.html"
+        }
+        document.querySelector("#img2").addEventListener("click",clickfn2)
+        function clickfn2(){
+            window.location.href="../Mens Section/mens_casual.html"
+        }
+        document.querySelector("#img3").addEventListener("click",clickfn3)
+        function clickfn3(){
+            window.location.href="../Mens Section/mens_jeans.html"
+        }
+        document.querySelector("#img4").addEventListener("click",clickfn4)
+        function clickfn4(){
+            window.location.href="../Mens Section/men_winter.html"
+        }
+        document.querySelector("#img5").addEventListener("click",clickfn5)
+        function clickfn5(){
+            window.location.href="../Mens Section/men_trouser.html"
+        }
+        document.querySelector("#img6").addEventListener("click",clickfn6)
+        function clickfn6(){
+            window.location.href="../Mens Section/men_indian.html"
+        }
+        document.querySelector("#img7").addEventListener("click",clickfn7)
+        function clickfn7(){
+            window.location.href="../Mens Section/men_active.html"
+        }
+        document.querySelector("#img8").addEventListener("click",clickfn8)
+        function clickfn8(){
+            window.location.href="../Mens Section/men_loungwear.html"
+        }
+        document.querySelector("#img9").addEventListener("click",clickfn9)
+        function clickfn9(){
+            window.location.href="../Mens Section/men_sleepwear.html"
+        }
+        document.querySelector("#img10").addEventListener("click",clickfn10)
+        function clickfn10(){
+            window.location.href="../Mens Section/men_innerwear.html"
+        }
+        document.querySelector("#img11").addEventListener("click",clickfn11)
+        function clickfn11(){
+            window.location.href="../Mens Section/men_footwear.html"
+        }
+        document.querySelector("#img12").addEventListener("click",clickfn12)
+        function clickfn12(){
+            window.location.href="../Mens Section/men_accessories.html"
+        }
+     </script>
 
     <script src="../footer.js"></script>
