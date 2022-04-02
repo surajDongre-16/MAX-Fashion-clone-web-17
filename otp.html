@@ -11,14 +11,13 @@
     ></script>
     <style>
         *{
-            line-height: 30px;
             font-family: proxima-nova, sans-serif;
             font-style: normal;
             font-weight: 400;
         }
-        body{
+        /* body{
             background-color: rgba(0,0,0,0.3);
-        }
+        } */
         .model-container{
             /* display:none; */
             display: flex;
@@ -34,42 +33,65 @@
         .model{
             background-color: #fff;
             border-radius: 5px;
-            padding: 5% 8%;
-            width:600px;
+            padding: 0% 6% 3% 8%;
+            width:470px;
             max-width: 100%;
         }
-        button{
+
+
+        #model-container button{
             background-color:#303ab2;
             border:none;
             color:white;
-            font-size: 25px;
-            padding: 20px 90px;
-            border-radius: 10px;
+            font-size: 16px;
+            margin-top: 16px;
+            padding: 20px 60px;
+            border-radius: 3px;
+            margin-right: 8%;
             float: right;
             cursor: pointer;
         }
         .model h1{
-            font-size: 50px;
-            margin-top: -30px;
+            font-size: 36px;
+            margin-bottom: 10px;
         }
-        .model h2{
-            font-size: 20px;
+
+        #model-container{
+            background-color: rgba(0,0,0,0.3);
         }
+
         .model input{
             font-size: 14px;
+            border:1px solid rgb(215, 208, 208)
         }
+
+        #model-container i{
+            font-size: 28px;
+            margin-left: 106.8%;
+            margin-top: 20px;
+        }
+
         .model p{
-            opacity: 0.7;
+            opacity: 0.5;
+            margin-top: 3px;
+            margin-bottom: 12px;
         }
-        .input-group{
-            display: flex;
-           justify-content: space-evenly;
+
+        .input-group>input:focus{
+            outline-color: #303ab2;
+        }
+
+        
+        .input-group-text{
+            border:1px solid gray;
+            padding: 20px;
         }
         .form-control{
-            padding:13px;
-            text-align: center;
+            padding: 13px 25%;
+            text-align: left;
+            width:41%;
         }
-        a{
+        #model-container a{
             text-decoration: none;
         }
     </style>
@@ -78,14 +100,15 @@
     <div id="model-container" class="model-container">
         <div class="model">
             <h1>Sign up or Sign in</h1>
-            <p>Enjoy the convenience of a single account across all participating brands</p>         
+            <p>Enjoy the convenience of a single account across all brands</p>         
             <h2>Verify with OTP</h2>
             <p class="change"></p>
-            <div class="input-group flex-nowrap">
-                <input type="text" class="form-control" size="10">
-                <input type="text" class="form-control" size="10">
-                <input type="text" class="form-control" size="10">
-                <input type="text" class="form-control" size="10">
+            <div class="input-group flex-nowrap" style="display:flex">
+                <input type="text" style="width:80px; height:36px; box-sizing: border-box; padding:25px">
+                <input type="text" style="width:80px; height:36px; box-sizing: border-box; padding:25px">
+                <input type="text" style="width:80px; height:36px; box-sizing: border-box; padding:25px">
+                <input type="text" style="width:80px; height:36px; box-sizing: border-box; padding:25px">
+                <input type="text" style="width:80px; height:36px; box-sizing: border-box; padding:25px">
               </div>
             <p>We have sent you code. </p>
             <button>CONTINUE</button>     
@@ -99,6 +122,6 @@
         document.querySelector("button").addEventListener("click", btnFun)
 
         function btnFun(){
-            window.location.href="successful.html"
+            window.location.href="signup-successful.html"
         }
 </script>
