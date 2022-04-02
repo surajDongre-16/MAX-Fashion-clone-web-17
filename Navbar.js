@@ -119,8 +119,8 @@ Navbar.innerHTML=`<div id="Upper_nav">
     </ul>
 </div>
 <div id="Search_bar">
-        <div id="Search_img"><i class="fa-solid fa-magnifying-glass"></i></div>
-        <input type="text" id="Search" placeholder="What are you looking for?">
+        <div id="Search_img" onclick="Searching_Input()"><i class="fa-solid fa-magnifying-glass"></i></div>
+        <input type="text" id="Search" oninput="Searching_Input(event)" placeholder="What are you looking for?">
 </div>
 
 <div id="Sign-up">
@@ -137,3 +137,57 @@ Navbar.innerHTML=`<div id="Upper_nav">
 function Go_To_Basket(){
     window.location.href="../basket.html"
 }
+
+var bag="";
+
+function Searching_Input(){
+    
+
+    if(event.data==undefined){
+        Searching_Function(bag);
+    }
+
+    else{
+        bag+=event.data;
+    }
+
+    function Searching_Function(bag){
+
+        // console.log("hello");
+        bag=bag.toUpperCase();
+
+        var Searched_Data=[];
+        // var data=[[{name:"hello kaka chalo kakan"},{name:"dada chacha"}],[{name:"kaka shaka"},{name:"nana fufa"}]];
+
+
+        for(var i=0;i<data.length;i++){
+            for(var j=0;j<data[i].length;j++){
+
+                // var subData=data[i].name.split(" ");
+                // console.log(data[i][j]);
+                var upper_case=data[i][j].name.toUpperCase();
+                // console.log(upper_case);
+
+                var subData=upper_case.split(" ");
+                // console.log(subData);
+
+                if(subData.indexOf(bag)!=-1){
+                    // console.log("hello");
+                    Searched_Data.push(data[i][j]);
+                    // console.log(Searched_Data);    
+                }
+
+            }
+        }
+
+        // console.log(Searched_Data);
+
+        localStorage.setItem("Searched_Data",JSON.stringify(Searched_Data));
+
+    }
+     
+}
+
+
+
+
