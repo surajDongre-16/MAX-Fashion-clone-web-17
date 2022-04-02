@@ -6,6 +6,8 @@ var total=cart.reduce(function (sum,el){
 console.log(total)
 var length=cart.length
 document.querySelector("#itemsInCart").innerText=`Your Shopping Basket (${length} items)`
+document.querySelector(".subtotal").innerText=`${total}`
+document.querySelector(".sub-total").innerText=`${total}`
 
 cart.map(function (el, index){
     // console.log(el.img_1)
@@ -32,4 +34,10 @@ function removeFunction(el,index){
     cart.splice(index,1)
     localStorage.setItem("tocart",JSON.stringify(cart))
     window.location.reload()
+}
+
+document.querySelector(".checkout").addEventListener("click", clikfun)
+
+function clikfun(){
+    window.location.href="checkout.html"
 }
