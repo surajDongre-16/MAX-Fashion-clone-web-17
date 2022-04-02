@@ -2,6 +2,10 @@
     font-family: proxima nova, sans-serif;
 }
 
+body img:hover{
+    cursor: pointer;
+}
+
 #NAVBAR a:hover{
     color:#303ab2;
 }
