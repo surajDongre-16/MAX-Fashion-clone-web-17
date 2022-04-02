@@ -126,10 +126,14 @@ Navbar.innerHTML=`<div id="Upper_nav">
 <div id="Sign-up">
     <div><p style="margin:14px 16px;">Sign Up - Sign In</p></div>
     <div></div>
-    <div style="display:flex; align-items: center;"><p style="margin:14px 18px">Basket</p><i class="fa-solid fa-bag-shopping" style="font-size: 25px; margin-bottom:6px;"></i></div>
+    <div id="#BASKET" onclick="Go_To_Basket()" style="display:flex; align-items: center;"><p style="margin:14px 18px">Basket</p><i class="fa-solid fa-bag-shopping" style="font-size: 25px; margin-bottom:6px;"></i></div>
 </div>
 
 </div>
 
 
 </div>`;
+
+function Go_To_Basket(){
+    window.location.href="../basket.html"
+}
