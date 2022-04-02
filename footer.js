@@ -6,7 +6,7 @@ footer.innerHTML=`<hr style="opacity:0.2">
         <P style="font-size: 22px;font-weight: bolder;color:black" class="innerPara">Subscribe to our awesome emails.</P>
         <p style="font-size:16px;color:#929391" class="innerPara">Get our latest offers and news straight in your inbox</p>
         <div id="sub">
-            <input placeholder="Please enter an email adress" />
+            <input placeholder="Please enter an email adress" style="width: 280px; background-color: #f7f8f7; border: 1px #f7f8f7; font-family: 'Roboto', sans-serif; font-size: 16px; padding-left: 30px;"/>
             <button id="subscribe">subscribe</button>
         </div>
 
