@@ -157,15 +157,17 @@ function Searching_Input(){
         bag=bag.toUpperCase();
 
         var Searched_Data=[];
-        // var data=[[{name:"hello kaka chalo kakan"},{name:"dada chacha"}],[{name:"kaka shaka"},{name:"nana fufa"}]];
+
+        
+        var Searching_Data=JSON.parse(localStorage.getItem("Searching_data"));
 
 
-        for(var i=0;i<data.length;i++){
-            for(var j=0;j<data[i].length;j++){
+        for(var i=0;i<Searching_Data.length;i++){
+            for(var j=0;j<Searching_Data[i].length;j++){
 
                 // var subData=data[i].name.split(" ");
                 // console.log(data[i][j]);
-                var upper_case=data[i][j].name.toUpperCase();
+                var upper_case=Searching_Data[i][j].name.toUpperCase();
                 // console.log(upper_case);
 
                 var subData=upper_case.split(" ");
@@ -173,7 +175,7 @@ function Searching_Input(){
 
                 if(subData.indexOf(bag)!=-1){
                     // console.log("hello");
-                    Searched_Data.push(data[i][j]);
+                    Searched_Data.push(Searching_Data[i][j]);
                     // console.log(Searched_Data);    
                 }
 
