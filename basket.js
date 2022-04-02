@@ -39,5 +39,5 @@ function removeFunction(el,index){
 document.querySelector(".checkout").addEventListener("click", clikfun)
 
 function clikfun(){
-    window.location.href="checkout.html"
+    window.location.href="payment.html"
 }
