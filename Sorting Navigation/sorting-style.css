@@ -1,22 +1,34 @@
 a>p{
-    font-size:36px;
     font-family: proxima-nova,sans-serif;
     font-style: normal;
-    font-weight:550;
-   
+    font-weight:550; 
 }
 
+body>p:first-child{
+    font-size: 36px;
+    margin-bottom:0px;
+}
+
+
+.sort{
+    width:81%;
+    margin:auto;
+    background-color:#f7f8f7;
+    margin-bottom: 50px;
+}
+
+
 #first
-{
+{   
+    padding:30px;
     height:56px;
-    width:90%;
+    width:81%;
     display: flex;
     margin: auto;
 }
 #first>div{
     border:1px solid #d0d0d0;  
     border-width: thin;        
-    
     text-align: center;
     margin-left:20px;
     width:80px;
@@ -37,17 +49,21 @@ a>p{
 }
 #input
 {
-    margin-top: 35px;
     height:80px;
-    width:auto;
+    width:81%;
+    margin:auto;
     background-color: #f7f8f7;
 }
 .inner-box{
-  width:90%;
+  width:100%;
   height:100%;
   margin:auto;
   padding-top: 10px;
 }
 select{
   border:1px solid rgb(213, 213, 213)
+}
+
+select:hover{
+    cursor:pointer;
 }
