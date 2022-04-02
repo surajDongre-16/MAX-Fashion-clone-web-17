@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-size:36px;
+            /* font-family: Arial, Helvetica, sans-serif; */
+            /* font-weight: 550; */
+            font-family: proxima-nova,sans-serif;
+            font-style: normal;
+            font-weight:550;
+           
+        }
+
+        #first
+        {
+            /* border:1px solid black; */
+            height:auto;
+            width:auto;
+            display: grid;
+            grid-gap:20px;
+            grid-column-gap: --10px;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(3, 50px);
+            margin-right: 50px;
+        }
+        #first>div{
+            /* border:1px solid #929391;   */
+            border-width: thin;        
+            
+            text-align: center;
+            /* padding-top:45%; */
+            margin-left:20px;
+            width:auto;
+            cursor: pointer;
+        }
+        
+        
+            
+            
+            
+
+        
+        #first>div:hover
+        {
+            border:1px solid blue;
+        }
+      
+        #input
+        {
+            margin-top: 35px;
+            height:80px;
+            width:auto;
+            /* border:1px solid black; */
+            background-color: #f7f8f7;
+        }
+        #input>select
+        {
+            width:192px;height:38.5px;
+            margin-top: 19px;
+            margin-left:32px;
+            border:none
+
+        }
+    #first>div{
+        height:55px;
+        width: auto;
+        border:1px solid #929391;
+        display:flex;
+    
+        /* padding:2px; */
+    }
+    .img
+    {
+        height:40px;
+        width:40px;
+        padding:5px;
+        
+
+        
+
+    }
+       
+    </style>
+</head>
+<body>
+    <hr>
+    <p style=" margin-left: 50px;">You searched for</p>
+    <div id="first">
+        <div  style="width:120px ; color:#929391; border:none"><p style="font-size:16px">Shop For</p></div>
+        <div style="width:150px ;">
+            <img 
+            class="img"
+            src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX_SubCatImg/1maxmen-tops-tshirts.jpg"/>
+           <P style="font-size:15px;;">Tops</P>
+            
+        </div>
+        <div style="width:150px ;">
+           
+            <P style="font-size:15px;;">Young</P>
+            
+        </div>
+        <div style="width:150px ;">
+            <img 
+            class="img"
+            src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX_SubCatImg/1maxmen-sportswear-trackpants.jpg"/>
+            <P style="font-size:15px;;">Sportswear</P>
+            
+        </div>
+        <div style="width:150px ;">
+            <img 
+            class="img"
+            src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX_SubCatImg/1maxmen-bottoms-jeans.jpg"/>
+            <P style="font-size:15px;;">Bottoms</P>
+            
+        </div>
+        <div style="width:150px ;">
+            <img 
+            class="img"
+            src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX_SubCatImg/11maxmen-loungewear-bottoms.jpg"/>
+            <P style="font-size:15px;;">Loungwear</P>
+            
+        </div>
+        <div style="width:150px ;">
+            <img 
+            class="img"
+            src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX_SubCatImg/1maxmen-shoes-casualshoes.jpg"/>
+            <P style="font-size:15px;;">Shoes</P>
+            
+        </div>
+        <div style="width:150px ;">
+            <img 
+            class="img"
+            src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX_SubCatImg/1maxshoesandaccessories-accessories-men-backpacks.jpg"/>
+            <P style="font-size:15px;;">Accessories</P>
+            
+        </div>
+        <div style="width:150px ;">
+            <img 
+            class="img"
+            src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX_SubCatImg/1maxmen-winterwear-sweatshirtsandhoodies.jpg"/>
+            <P style="font-size:15px;;">Winterwear</P>
+            
+        </div>
+        <div style="width:150px ;">
+            <img 
+            class="img"
+            src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX_SubCatImg/11maxmen-indianwear-sets.jpg"/>
+            <P style="font-size:15px;;">Indian Wear</P>
+           
+            
+        </div>
+        <div style="width:150px ;">
+            <img 
+            class="img"
+            src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX_SubCatImg/1maxmen-innerwear-vests.jpg"/>
+            <P style="font-size:15px;;">Innerwear</P>
+            
+        </div>
+        
+
+
+       
+        
+    </div>
+    <div id="input">
+        <select>
+            <option ><p >Price</p></option>
+        </select>
+        <select>
+            <option ><p >Browse</p></option>
+            <option value="">ONLINE ONLY (2472)</option>
+            <option value="">New (2072)</option>
+            <option value="">Get 2nd At flat 199 (1916)</option>
+            <option value="">Get 2nd At Flat 99 (916)</option>
+        </select>
+        <select>
+            <option ><p >Brand</p></option>
+            <option>Max (15120)</option>
+            <option>Peter England(24)</option>
+        </select>
+        <select>
+            <option ><p >Size</p></option>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+            <option value="">6</option>
+        </select>
+        <select>
+            <option><p >Color</p></option>
+        <option value="">Blue</option>
+        <option value="">Black</option>
+        <option value="">white</option>
+        <option value="">yellow</option>
+        </select>
+    </div>
+</body>
+</html>
+<script>
+    document.querySelector(".img").addEventListener("click",clickfn)
+
+    function clickfn(){
+        window.location.href="../Boys Section/boys_Tees.html"
+    }
+</script>
