@@ -45,27 +45,27 @@ Navbar.innerHTML=`<div id="Upper_nav">
 
 <div class="mid_li">
     <ul>
-        <li><a href="#">Women</a>
+        <li><a href="#" style="color:#303ab2;font-weight: 600;">Women</a>
             <div class="Sub_menu_1">
                 <ul>
-                    <li><a href="#">Tops</a></li>
-                    <li><a href="#">Bottoms</a></li>
-                    <li><a href="#">Dresses & Jumpsuits</a></li>
-                    <li><a href="#">Sleepwear</a></li>
-                    <li><a href="#">Indian Wear</a></li>
-                    <li><a href="#">Sportswear</a></li>
-                    <li><a href="#">Lingerie</a></li>
-                    <li><a href="#">Accessories</a></li>
-                    <li><a href="#">Footwear</a></li>
-                    <li><a href="#">Winterwear</a></li>
-                    <li><a href="#">More</a></li>
+                    <li><a href="../Womens Section/tees.html">Tops</a></li>
+                    <li><a href="../Womens Section/bottom.html">Bottoms</a></li>
+                    <li><a href="../Womens Section/dresses.html">Dresses & Jumpsuits</a></li>
+                    <li><a href="../Womens Section/sleepwear.html">Sleepwear</a></li>
+                    <li><a href="../Womens Section/ethinic.html">Indian Wear</a></li>
+                    <li><a href="../Womens Section/active.html">Sportswear</a></li>
+                    <li><a href="../Womens Section/lingeri.html">Lingerie</a></li>
+                    <li><a href="../Womens Section/fusion.html">Accessories</a></li>
+                    <li><a href="../Womens Section/kurta.html">Footwear</a></li>
+                    <li><a href="../Womens Section/winter.html">Winterwear</a></li>
+                    <li><a href="../Womens Section/addon.html">More</a></li>
                 </ul>
             </div>
         </li>
 
 
-        <li><a href="#">Mens</a>
-            <div class="Sub_menu_2">
+        <li><a href="./mens.html">Mens</a>
+            <div class="Sub_menu_2" style="display:block; position:absolute; margin-top: 10px; margin-left: -13.1%;">
                 <ul>
                     <li><a href="#">Tops</a></li>
                     <li><a href="#">Bottoms</a></li>
@@ -84,7 +84,7 @@ Navbar.innerHTML=`<div id="Upper_nav">
         </li>
 
 
-        <li><a href="#">Girls</a>
+        <li><a href="./Girls.html">Girls</a>
             <div class="Sub_menu_3">
                 <ul>
                     <li><a href="#">Baby Girl (0-2 Yrs)</a></li>
@@ -101,7 +101,7 @@ Navbar.innerHTML=`<div id="Upper_nav">
         </li>
 
 
-        <li><a href="#">Boys</a>
+        <li><a href="./boys.html">Boys</a>
             <div class="Sub_menu_4">
                 <ul>
                     <li><a href="#">Baby Boy (0-2 Yrs)</a></li>

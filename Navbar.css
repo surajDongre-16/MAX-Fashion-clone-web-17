@@ -2,6 +2,13 @@
     font-family: proxima nova, sans-serif;
 }
 
+body img:hover{
+    cursor: pointer;
+}
+
+#NAVBAR a:hover{
+    color:#303ab2;
+}
 
 #Upper_nav{
     margin-top: -8px;
@@ -203,6 +210,10 @@
     background-color: #303ab2;
     color:white;
     border: 1px solid #303ab2;
+}
+
+#Offer_nav:hover{
+    cursor:pointer;
 }
 
 #Offer_nav>h4{

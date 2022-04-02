@@ -14,13 +14,15 @@
     <link rel="stylesheet" href="../product_list.css">
     <link rel="stylesheet" href="../footer.css">
     <link rel="stylesheet" href="../Sorting Navigation/sorting-style.css">
-
+    <link rel="stylesheet" href="../Navbar.css">
 
 </head>
 
 <body>
+
+  <div id="NAVBAR"></div>
   <!-- YOU SEARCHED FOR -->
-  <p style="margin-left:100px">You searched for</p>
+  <p style="margin-left:9%">You searched for</p>
     <div id="first">
         <div  style="width:120px ; color:#929391; border:none ; margin-left:-20px"><p style="font-size:16px">Shop For</p></div>
         <div><a href="../Sorting Navigation/women_nav_sort.html"><p>Women</p></a></div>
@@ -64,6 +66,7 @@
       </div>
         
     </div>
+    <br><br>
   <!-- END -->
   <div class="sort">
     <div>
@@ -96,6 +99,8 @@
 <script>
 
 displayData(womens_activewear);
+
+
 function NameSort() {
       //console.log('inside name sort')
       var selected = document.querySelector("#sortNames").value;
@@ -133,3 +138,5 @@ function NameSort() {
 </script>
 
 <script src="../footer.js"></script>
+
+<script src="../Navbar.js"></script>
