@@ -4,9 +4,10 @@ a>p{
     font-weight:550; 
 }
 
-body>p:first-child{
+#NAVBAR+p{
     font-size: 36px;
     margin-bottom:0px;
+    margin-top:100px;
 }
 
 
