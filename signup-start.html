@@ -11,14 +11,13 @@
     ></script>
     <style>
         *{
-            line-height: 30px;
             font-family: proxima-nova, sans-serif;
             font-style: normal;
             font-weight: 400;
         }
-        body{
+        /* body{
             background-color: rgba(0,0,0,0.3);
-        }
+        } */
         .model-container{
             /* display:none; */
             display: flex;
@@ -34,39 +33,55 @@
         .model{
             background-color: #fff;
             border-radius: 5px;
-            padding: 5% 8%;
-            width:600px;
+            padding: 0% 6% 3% 8%;
+            width:470px;
             max-width: 100%;
         }
-        button{
+
+
+        #model-container button{
             background-color:#303ab2;
             border:none;
             color:white;
-            font-size: 25px;
-            padding: 20px 90px;
-            border-radius: 10px;
+            font-size: 16px;
+            margin-top: 16px;
+            padding: 20px 60px;
+            border-radius: 3px;
+            margin-right: 8%;
             float: right;
             cursor: pointer;
         }
         .model h1{
-            font-size: 50px;
-            margin-top: -30px;
+            font-size: 36px;
+            margin-bottom: 10px;
         }
-        .model h2{
-            font-size: 15px;
+
+        #model-container{
+            background-color: rgba(0,0,0,0.3);
         }
+
         .model input{
             font-size: 14px;
+            border:1px solid rgb(215, 208, 208)
         }
+
+        #model-container i{
+            font-size: 28px;
+            margin-left: 106.8%;
+            margin-top: 20px;
+        }
+
         .model p{
-            opacity: 0.7;
+            opacity: 0.5;
+            margin-top: 3px;
+            margin-bottom: 12px;
         }
-        .fa-solid{
-            font-size: 60px;
-            float: right;
-            margin: -80px;
-            cursor: pointer;
+
+        .input-group>input:focus{
+            outline-color: #303ab2;
         }
+
+        
         .input-group-text{
             border:1px solid gray;
             padding: 20px;
@@ -74,8 +89,9 @@
         .form-control{
             padding: 13px 25%;
             text-align: left;
+            width:41%;
         }
-        a{
+        #model-container a{
             text-decoration: none;
         }
     </style>
@@ -85,13 +101,12 @@
         <div class="model">
             <i class="fa-solid fa-xmark"></i>
             <h1>Sign up or Sign in</h1>
-            <p>Enjoy the convenience of a single account across all participating brands</p>         
-            <h2>Mobile Number</h2>
+            <p>Enjoy the convenience of a single account across all brands</p>         
+            <p style="font-weight: 600; font-size: 14px;color:black;opacity: 1;">Mobile Number</p>
             <div class="input-group flex-nowrap">
-                <span class="input-group-text" id="addon-wrapping">+91</span>
                 <input type="text" class="form-control" placeholder="Enter your mobile number">
-              </div>
-            <p>By creating your account you agree to our <a href="https://www.maxfashion.in/in/en/termsandconditions">Terms and Conditions</a> </p>
+            </div>
+            <p style="font-size:13px;margin:18px 0px;opacity:1;">By creating your account you agree to our <a href="https://www.maxfashion.in/in/en/termsandconditions">Terms and Conditions</a> </p>
             <button>CONTINUE</button>     
         </div>
     </div>
