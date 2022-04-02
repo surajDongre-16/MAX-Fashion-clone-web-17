@@ -1,5 +1,5 @@
 //Select a shipping method
-document.querySelector("#shipping>div>div").addEventListener("click",)
+
 
 
 
@@ -33,3 +33,9 @@ var subTot = document.querySelector("p2");
 subTot.innerText = subtotal;
 var tot = document.querySelector("p4");
 tot.innerText = subtotal;
+
+document.querySelector("#button").addEventListener("click",success);
+
+function success(){
+    window.location.href = "success.html";
+}
