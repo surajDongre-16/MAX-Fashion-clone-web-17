@@ -101,10 +101,7 @@ div > input{
     width:2%;
     height: 100%;
 }
-.fa-solid{
-    font-size: 40px;
-    margin-top: 250px;    
-}
+
 .img{
     height:100%;
     border: 1px solid red;
@@ -114,7 +111,7 @@ div > input{
     margin:auto;
     width:81.5%;
     font-size: 36px;
-    margin-top:60px;
+    margin-top:30px;
     margin-bottom: 60px;
 }
 
