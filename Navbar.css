@@ -134,25 +134,69 @@
     margin-left: -21.3%;
 }
 
+.mid_li>ul>li>a:hover{
+    color:#303ab2;
+}
+
 
 #Search_bar{
-    height: 34px;
+    height: 40px;
     width:29%;
     margin-left: 16px;
     background-color: #ecedeb ;
-    
-    border: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+
+#Upper_nav>div>div:hover{
+    cursor: pointer;
 }
 
 #Sign-up{
     display: flex;
     width:17%;
-    margin-left: 150px;
+    align-items: center;
+    margin-left: 11%;
     font-size: 14px ;
     font-weight: 600;
     justify-content: space-evenly;
     box-sizing: border-box;
 }
+
+#Sign-up>div:hover{
+    cursor: pointer;
+}
+
+#Sign-up>div:nth-child(1):hover{
+    color:#303ab2;
+}
+
+#Sign-up>div:nth-child(2){
+    height: 22px;
+    width:1px;
+    background-color:rgb(196, 184, 184);
+}
+
+#Search_img{
+    padding:7px;
+    font-size: 16px;
+    color:#a4a5a3;
+}
+
+#Search{
+    border:none; 
+    background-color:#ecedeb; 
+    font-size:15px; 
+    width:80%;
+    margin-left: 10px;
+}
+
+#Search:focus{
+    outline: none;
+    
+}
+
+
 
 
 
