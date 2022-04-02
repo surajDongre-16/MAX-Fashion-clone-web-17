@@ -27,7 +27,7 @@ span{
 }
 
 #product_list{
-    width:90%;
+    width:81.4%;
     margin:auto;
     display:grid;
     grid-template-columns: repeat(4,1fr);
