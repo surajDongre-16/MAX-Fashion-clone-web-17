@@ -11,13 +11,14 @@
     ></script>
     <style>
         *{
+            line-height: 30px;
             font-family: proxima-nova, sans-serif;
             font-style: normal;
             font-weight: 400;
         }
-        /* body{
+        body{
             background-color: rgba(0,0,0,0.3);
-        } */
+        }
         .model-container{
             /* display:none; */
             display: flex;
@@ -33,65 +34,43 @@
         .model{
             background-color: #fff;
             border-radius: 5px;
-            padding: 0% 6% 3% 8%;
-            width:470px;
+            padding: 5% 5%;
+            width:600px;
             max-width: 100%;
         }
-
-
-        #model-container button{
+        button{
             background-color:#303ab2;
             border:none;
             color:white;
-            font-size: 16px;
-            margin-top: 16px;
-            padding: 20px 60px;
-            border-radius: 3px;
-            margin-right: 8%;
+            font-size: 25px;
+            padding: 20px 90px;
+            border-radius: 10px;
             float: right;
             cursor: pointer;
         }
         .model h1{
-            font-size: 36px;
-            margin-bottom: 10px;
+            font-size: 50px;
+            margin-top: -30px;
         }
-
-        #model-container{
-            background-color: rgba(0,0,0,0.3);
+        .model h2{
+            font-size: 20px;
         }
-
         .model input{
             font-size: 14px;
-            border:1px solid rgb(215, 208, 208)
         }
-
-        #model-container i{
-            font-size: 28px;
-            margin-left: 106.8%;
-            margin-top: 20px;
-        }
-
         .model p{
-            opacity: 0.5;
-            margin-top: 3px;
-            margin-bottom: 12px;
+            opacity: 0.7;
         }
-
-        .input-group>input:focus{
-            outline-color: #303ab2;
+        .input-group{
+            display: flex;
+           justify-content: space-evenly;
         }
-
         
-        .input-group-text{
-            border:1px solid gray;
-            padding: 20px;
-        }
         .form-control{
-            padding: 13px 25%;
-            text-align: left;
-            width:41%;
+            padding:13px;
+            text-align: center;
         }
-        #model-container a{
+        a{
             text-decoration: none;
         }
     </style>
@@ -99,21 +78,28 @@
 <body>
     <div id="model-container" class="model-container">
         <div class="model">
-            <h1>Link your account</h1>
-            <p>Existing User please login to your account to link your account to your phone number. It's one life time process</p>         
+            <h1>Enter OTP</h1>
+            <p>Enjoy the convenience of a single account across all participating brands</p>         
+            <h2>Verify with OTP</h2>
             <div class="input-group flex-nowrap">
-                <input type="text" class="form-control" placeholder="Your Email">
-            </div>
-            <button>PROCEED</button>     
+                <input type="text" class="form-control" size="10">
+                <input type="text" class="form-control" size="10">
+                <input type="text" class="form-control" size="10">
+                <input type="text" class="form-control" size="10">
+              </div>
+            <p>We have sent you OTP. </p>
+            <button>CONTINUE</button>     
         </div>
     </div>
 </body>
 </html>
 <script>
         var getNo=JSON.parse(localStorage.getItem("enterdNo"))
-        document.querySelector("button").addEventListener("click",btnFun)
+        document.querySelector("button").addEventListener("click", btnFun)
 
         function btnFun(){
+            console.log("im in")
+            alert("Order Placed Successfully")
             window.location.href="./All Home Pages/index.html"
         }
 </script>
