@@ -153,6 +153,7 @@ function Searching_Input(){
 
     function Searching_Function(bag){
 
+        localStorage.setItem("bag",JSON.stringify(bag))
         // console.log("hello");
         bag=bag.toUpperCase();
 
@@ -177,14 +178,16 @@ function Searching_Input(){
                     // console.log("hello");
                     Searched_Data.push(Searching_Data[i][j]);
                     // console.log(Searched_Data);    
+                    localStorage.setItem("Searched_Data",JSON.stringify(Searched_Data));
                 }
 
             }
         }
 
+        window.location.href="../Search_result.html"
         // console.log(Searched_Data);
 
-        localStorage.setItem("Searched_Data",JSON.stringify(Searched_Data));
+        
 
     }
      
