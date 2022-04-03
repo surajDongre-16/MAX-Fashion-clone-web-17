@@ -2129,7 +2129,7 @@ men_Accessories=[
 ]
 
 
-var womens_tees = [
+womens_tees = [
     {
         img_1: "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011047617-Pink-PINK-1000011047617-10032022_01-2100.jpg",
         price: 699,
@@ -2332,7 +2332,7 @@ var womens_tees = [
     }
 ]
 
-var womens_dresses = [
+womens_dresses = [
 {
     img_1:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011070186-Pink-PINK-1000011070186-10032022_01-2100.jpg",
     price:999,
@@ -2377,7 +2377,7 @@ var womens_dresses = [
 ]
 
 
-var womens_winterwear = [
+womens_winterwear = [
     {
         img_1:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010504033-Blue-Indigo-1000010504033-8132021_01-2100.jpg",
         price:1049,
@@ -2423,7 +2423,7 @@ var womens_winterwear = [
 
 
 
-var womens_bottoms = [
+womens_bottoms = [
     {
         img_1:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011069992-Beige-IVORY-1000011069992-10032022_01-2100.jpg",
         price:999,
@@ -2466,7 +2466,7 @@ var womens_bottoms = [
     }
 ]
 
-var womens_kurtas = [
+ womens_kurtas = [
 {
     img_1:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011116244-Green-GREEN-1000011116244-07032022_01-2100.jpg",
     price:1599,
@@ -2511,7 +2511,7 @@ var womens_kurtas = [
 ]
 
 
-var womens_suits = [
+ womens_suits = [
     ,
     {
         img_1:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010845951-Multicolour-M-1000010845951-22122021_01-2100.jpg",
@@ -2637,7 +2637,7 @@ var womens_suits = [
 
 
 
-var womens_fusion = [
+ womens_fusion = [
     {
         img_1:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010775726-Pink-PINK-1000010775726-29122021_01-2100.jpg",
         price:1099,
@@ -2680,7 +2680,7 @@ var womens_fusion = [
     }
 ]
 
-var womens_ethics = [
+ womens_ethics = [
     {
         img_1:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010359744-Beige-Offwhite-1000010359744-9072021_01-2100.jpg",
         price:499,
@@ -2845,7 +2845,7 @@ var womens_ethics = [
 
 
 
-var womens_sleepwear = [
+ womens_sleepwear = [
     {
         img_1:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010769067-Blue-NAVY-1000010769067-5012022_01-2100.jpg",
         price:649,
@@ -3008,7 +3008,7 @@ var womens_sleepwear = [
     }
 ]
 
-var womens_activewear = [
+ womens_activewear = [
     {
         img_1:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010347621-Grey-Charcoal-1000010347621-11232021_01-2100.jpg",
         price:699,
@@ -3172,7 +3172,7 @@ var womens_activewear = [
 ]
 
 
-var womens_lingeria = [
+ womens_lingeria = [
     {
         img_1:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010334742-Grey-Grey-1000010334742-11232021_01-2100.jpg",
         price:499,
@@ -3293,11 +3293,11 @@ var womens_lingeria = [
         price:349,
         name:"MAX Solid T-shirt Bra"
     }
-]
+],
 
 
 
-var womens_addon = [
+ womens_addon = [
     {
         img_1:"https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010350533-Black-Black-1000010350533-8182021_02-2100.jpg",
         price:299,
@@ -3459,3 +3459,16 @@ var womens_addon = [
         name:"MAX Printed Socks - Set of 3"
     }
 ]
+
+
+
+
+
+
+Searching_Data=[mensTshirt,boys_Tees,boys_shirts,boys_essentials,boys_indian,boys_addon,boys_bottoms,girls_tees,girls_jeans,girls_dress,girls_essentials,girls_indian,girls_addon,men_casual,Men_jeans,men_winterwear,Men_formalshirts,Men_Trousers,Men_Indianwear,Men_Active,men_innerwear,men_loungwear,men_footwear,men_Accessories,womens_tees]
+
+
+
+
+
+localStorage.setItem("Searching_data",JSON.stringify(Searching_Data));

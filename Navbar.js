@@ -119,17 +119,80 @@ Navbar.innerHTML=`<div id="Upper_nav">
     </ul>
 </div>
 <div id="Search_bar">
-        <div id="Search_img"><i class="fa-solid fa-magnifying-glass"></i></div>
-        <input type="text" id="Search" placeholder="What are you looking for?">
+        <div id="Search_img" onclick="Searching_Input()"><i class="fa-solid fa-magnifying-glass"></i></div>
+        <input type="text" id="Search" oninput="Searching_Input(event)" placeholder="What are you looking for?">
 </div>
 
 <div id="Sign-up">
     <div><p style="margin:14px 16px;">Sign Up - Sign In</p></div>
     <div></div>
-    <div style="display:flex; align-items: center;"><p style="margin:14px 18px">Basket</p><i class="fa-solid fa-bag-shopping" style="font-size: 25px; margin-bottom:6px;"></i></div>
+    <div id="#BASKET" onclick="Go_To_Basket()" style="display:flex; align-items: center;"><p style="margin:14px 18px">Basket</p><i class="fa-solid fa-bag-shopping" style="font-size: 25px; margin-bottom:6px;"></i></div>
 </div>
 
 </div>
 
 
 </div>`;
+
+function Go_To_Basket(){
+    window.location.href="../basket.html"
+}
+
+var bag="";
+
+function Searching_Input(){
+    
+
+    if(event.data==undefined){
+        Searching_Function(bag);
+    }
+
+    else{
+        bag+=event.data;
+    }
+
+    function Searching_Function(bag){
+
+        localStorage.setItem("bag",JSON.stringify(bag))
+        // console.log("hello");
+        bag=bag.toUpperCase();
+
+        var Searched_Data=[];
+
+        
+        var Searching_Data=JSON.parse(localStorage.getItem("Searching_data"));
+
+
+        for(var i=0;i<Searching_Data.length;i++){
+            for(var j=0;j<Searching_Data[i].length;j++){
+
+                // var subData=data[i].name.split(" ");
+                // console.log(data[i][j]);
+                var upper_case=Searching_Data[i][j].name.toUpperCase();
+                // console.log(upper_case);
+
+                var subData=upper_case.split(" ");
+                // console.log(subData);
+
+                if(subData.indexOf(bag)!=-1){
+                    // console.log("hello");
+                    Searched_Data.push(Searching_Data[i][j]);
+                    // console.log(Searched_Data);    
+                    localStorage.setItem("Searched_Data",JSON.stringify(Searched_Data));
+                }
+
+            }
+        }
+
+        window.location.href="../Search_result.html"
+        // console.log(Searched_Data);
+
+        
+
+    }
+     
+}
+
+
+
+

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    
     <script
       src="https://kit.fontawesome.com/24c494a6b6.js"
       crossorigin="anonymous"
@@ -15,16 +15,14 @@
     <link rel="stylesheet" href="../footer.css">
     <link rel="stylesheet" href="../Sorting Navigation/sorting-style.css">
     <link rel="stylesheet" href="../Navbar.css">
-    
+
 
 </head>
-
 <body>
+    
+    <div id="NAVBAR"></div>
 
-  <div id="NAVBAR"></div>
-
-
-  <p style="margin-left:9%">You searched for</p>
+  <p style="margin-left:9%">You searched for <span style="color:black"></span></p>
   <div id="first">
       <div  style="width:120px ; color:#929391; border:none ; margin-left:-20px"><p style="font-size:16px">Shop For</p></div>
       <div><a href="../Sorting Navigation/women_nav_sort.html"><p>Women</p></a></div>
@@ -32,7 +30,6 @@
       <div style="width:60px"><a href="../Sorting Navigation/Girl_nav_sort.html"><p>Girl</p></a></div>
       <div style="width:60px"><a href="../Sorting Navigation/boy_nav_sort.html"><p>Boy</p></a></div>
   </div>
-  
   <div id="input">
     <div class="inner-box">
       <select>
@@ -72,9 +69,6 @@
   <br><br>
 
 
-
-
-
     <div class="sort">
         <div>
           <p class="total-product"></p>
@@ -89,14 +83,15 @@
           </select>
         </div>
         
-      </div>  
-    
+      </div>
+
+
+
     <div id="product_list"></div>
 
     <div id="Footer"></div>
 
 </body>
-
 </html>
 
 
@@ -104,48 +99,18 @@
 
 <script src="../AllData.js"></script>
 
-<script>
-
-displayData(men_Accessories);
-
-
-function NameSort() {
-      //console.log('inside name sort')
-      var selected = document.querySelector("#sortNames").value;
-      console.log(selected);
-
-      if (selected == "ascending") {
-        men_Accessories.sort(function (a, b) {
-          if (a.name > b.name) return 1;
-          if (a.name < b.name) return -1;
-          return 0;
-        });
-        displayData(men_Accessories);
-      }
-
-      if (selected == "htl") {
-        men_Accessories.sort(function (a, b) {
-          return b.price - a.price;
-        });
-        displayData(men_Accessories);
-      }
-
-      if (selected == "lth") {
-        men_Accessories.sort(function (a, b) {
-          return a.price - b.price;
-        });
-        displayData(men_Accessories);
-      }
-
-      if(selected == "rele"){
-        displayData(men_Accessories)
-      }
-  }
-
-
-</script>
 
 <script src="../footer.js"></script>
 
 <script src="../Navbar.js"></script>
 
+<script>
+    var Searched_Data=JSON.parse(localStorage.getItem("Searched_Data"));
+
+    displayData(Searched_Data);
+
+    var search_Reply=document.querySelector("#NAVBAR~p>span");
+    var BAG=JSON.parse(localStorage.getItem("bag"));
+    search_Reply.innerText=`"${BAG}"`
+
+</script>
