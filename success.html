@@ -40,7 +40,16 @@
         <p>Your Order number is 5435453453423</p>
     </div></div>
     <div>
-        <img src="https://dd311b21463486cea6e6-ba57f67b7c05f7cbe632f35f74bd7340.lmsin.net/Checkout/img-01.jpg" alt="bag">
+        <img src="https://dd311b21463486cea6e6-ba57f67b7c05f7cbe632f35f74bd7340.lmsin.net/Checkout/img-01.jpg" alt="bag" id="bag">
     </div>
 </body>
 </html>
+
+<script >
+    var redirect = document.querySelector("#bag");
+    redirect.addEventListener("click", toHomePage);
+
+    function toHomePage(){
+        window.location.href = "All Home Pages/index.html";
+    }
+</script>

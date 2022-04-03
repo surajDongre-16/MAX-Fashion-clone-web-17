@@ -1,10 +1,3 @@
-//Select a shipping method
-
-
-
-
-
-
 
 
 //Checkout 
@@ -39,3 +32,4 @@ document.querySelector("#button").addEventListener("click",success);
 function success(){
     window.location.href = "success.html";
 }
+
