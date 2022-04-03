@@ -237,3 +237,69 @@ div > input{
 .connect{
     margin-bottom: 60px;
 }
+/* Signup form  */
+.bg-model, .bg-model-1{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.signup-container-1, .signup-container-2{
+    width:470px;
+    height: 300px;    
+    background-color: white;
+    border-radius: 4px;
+    padding: 0% 5% 3% 5%;
+    position: relative;
+} 
+.signup-container-1 > h1, .signup-container-2 > h1{
+    font-size: 36px;
+}
+.signup-container-1 > p, .signup-container-2 > p{
+    opacity: 0.5;
+    margin-top: 3px;
+    margin-bottom: 12px;
+}
+
+.close{
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 42px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.signup-btn, .signup-otp{
+    background-color:#303ab2;
+    border:none;
+    color:rgba(255,255,255);
+    font-size: 16px;
+    margin-top: 16px;
+    padding: 20px 60px;
+    border-radius: 3px;
+    margin-right: 8%;
+    float: right;
+    cursor: pointer;
+}
+.input-group>input:focus{
+    outline-color: #303ab2;
+}
+.input-group-text{
+    border:1px solid gray;
+    padding: 20px;
+}
+.form-control{
+    padding: 13px 25%;
+    width:41%;
+}
+
+/* signup form end */
