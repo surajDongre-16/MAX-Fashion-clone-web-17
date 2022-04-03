@@ -3465,7 +3465,7 @@ womens_bottoms = [
 
 
 
-Searching_Data=[mensTshirt,boys_Tees,boys_shirts,boys_essentials,boys_indian,boys_addon,boys_bottoms,girls_tees,girls_jeans,girls_dress,girls_essentials,girls_indian,girls_addon,men_casual,Men_jeans,men_winterwear,Men_formalshirts,Men_Trousers,Men_Indianwear,Men_Active,men_innerwear,men_loungwear,men_footwear,men_Accessories,womens_tees,womens_dresses,womens_winterwear,womens_bottoms,womens_kurtas,womens_suits,womens_fusion,womens_ethics,womens_sleepwear,womens_activewear,womens_lingeria,womens_addon]
+Searching_Data=[mensTshirt,boys_Tees,boys_shirts,boys_essentials,boys_indian,boys_addon,boys_bottoms,girls_tees,girls_jeans,girls_dress,girls_essentials,girls_indian,girls_addon,men_casual,Men_jeans,men_winterwear,Men_formalshirts,Men_Trousers,Men_Indianwear,Men_Active,men_innerwear,men_loungwear,men_footwear,men_Accessories,womens_tees]
 
 
 
