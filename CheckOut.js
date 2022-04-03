@@ -1,7 +1,7 @@
 
 
 //Checkout 
-var basketItems = JSON.parse(localStorage.getItem("toBasket")) || [];
+var basketItems = JSON.parse(localStorage.getItem("tocart")) || [];
 
 var subtotal = 0;
 basketItems.map(function(e){
