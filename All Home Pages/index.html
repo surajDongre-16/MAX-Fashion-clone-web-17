@@ -439,7 +439,7 @@
             document.querySelector(".bg-model").style.display="flex"
         }
         document.querySelector(".signup-btn").addEventListener("click",otpfn)
- 
+
         function otpfn(){
             document.querySelector(".bg-model").style.display="none"
             document.querySelector(".bg-model-1").style.display="flex"
@@ -451,6 +451,12 @@
             alert("Hello User")
             document.querySelector(".bg-model-1").style.display="none"
             document.querySelector(".user-name").innerText="Hello User"
+        }
+
+        document.querySelector(".close").addEventListener("click",closefn)
+
+        function closefn(){
+            window.location.href="index.html"
         }
     
     </script>
