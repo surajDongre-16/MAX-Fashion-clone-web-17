@@ -10,17 +10,22 @@ launch of the brand with its first store in Indore.
 
 ## About this project:
 This is a team project, built by us in the Construct Week - Unit 2 at Masai School.
+Deployed link of Netlify : https://transcendent-licorice-7730fe.netlify.app/
 ## Team Members
 
 - [Suraj Dongre](https://www.github.com/surajDongre-16)
+    Blog link-https://medium.com/@surajdongre8/max-fashion-clone-79c1b20dbda1
 
 - [Jyoti Kamal Singh](https://www.github.com/jksingh1504)
+    Blog link-https://medium.com/@boby150499/my-first-collaborative-project-in-masai-school-cae3938ccd5
 
 - [Rohit Gupta](https://www.github.com/Rohit9894)
 
 - [Rupak Mondal](https://www.github.com/rupakmandal522)
+    Blog link-https://rupakmandal.medium.com/my-first-collaborative-project-in-masai-school-8e35aa1385ed
 
 - [Pardeep Sharma](https://www.github.com/shadow3012)
+    Blog link-https://medium.com/@pardeep.sharma14195/my-first-collaborative-project-in-masai-school-5be5a203e069
 
 - [Sharang Ahirekar](https://www.github.com/sharangahirekar1)
 ## Pages and features:
@@ -69,6 +74,8 @@ Additional Features: Kept the fonts, colors and favicon and titles consistent th
 - Additional features add and functioned by Jyoti.
 
 - Code optimization done by Jyoti.
+
+- Code merging and management by Jyoti and Suraj 
 
 - Data collected by Rohit & Pardeep.
 ## Learning
