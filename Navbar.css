@@ -66,7 +66,8 @@
     display: flex;
     align-items: center;
     height: 60px;
-    background-color: #f7f8f7;
+    width:100.8%;
+    background-color: #f1f5f1;
 }
 
 #Mid_nav>div:first-child{
@@ -150,7 +151,7 @@
     height: 40px;
     width:29%;
     margin-left: 16px;
-    background-color: #ecedeb ;
+    background-color: #e6eae4 ;
     display: flex;
     align-items: center;
 }
@@ -192,7 +193,7 @@
 
 #Search{
     border:none; 
-    background-color:#ecedeb; 
+    background-color:#e6eae4; 
     font-size:15px; 
     width:80%;
     margin-left: 10px;
