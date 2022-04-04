@@ -64,18 +64,20 @@ Additional Features: Kept the fonts, colors and favicon and titles consistent th
 - The sign-up and sign-in page is designed and functioned by Suraj.
 
 - Filter by category page is designed and functioned by Rohit
+
+- All product pages java-script writtent by jyoti. 
  
-- All products page and sorting data is designed & functioned by Suraj.
+- sorting data is designed & functioned by Suraj.
 
 - Products add to cart button is designed, and functioned by Jyoti.
 
 - Payment Page as well as basket page is designed & functioned by Sharang.
 
-- Additional features add and functioned by Jyoti.
+- Additional features added and functioned by Jyoti.
 
-- Code optimization done by Jyoti.
+- Code optimization and debugging done by Jyoti.
 
-- Code merging and management by Jyoti and Suraj 
+- Code merging and management by Jyoti and Suraj. 
 
 - Data collected by Rohit & Pardeep.
 ## Learning
