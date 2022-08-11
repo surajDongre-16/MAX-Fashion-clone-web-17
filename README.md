@@ -10,7 +10,7 @@ launch of the brand with its first store in Indore.
 
 ## About this project:
 This is a team project, built by us in the Construct Week - Unit 2 at Masai School.
-Deployed link of Netlify : https://transcendent-licorice-7730fe.netlify.app/
+Deployed link of Netlify : https://max-fashion-fw17.netlify.app/
 ## Team Members
 
 - [Suraj Dongre](https://www.github.com/surajDongre-16)
